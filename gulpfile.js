@@ -23,7 +23,7 @@ function server() {
 
 //html task
 function html() {
-    return src('app/*.html')
+    return src('app/**/*.html')
       .pipe(plumber())
       .pipe(dest('app/public'));
   }
@@ -55,7 +55,7 @@ function styles() {
 // Watch files
 function watchFiles() {
   watch("app/assets/styles/**/*.less", styles);
-  watch("app/*.html").on('change', browserSync.reload);
+  watch("app/**/*.html").on('change', browserSync.reload);
 }
 
 //const build = series(clean, gulp.parallel(css, images, jekyll, js));
