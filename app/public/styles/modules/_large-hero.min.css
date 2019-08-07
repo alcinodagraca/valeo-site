@@ -1,0 +1,40 @@
+.large-hero {
+  background: linear-gradient(329deg, #b900c9 19%, #CD006F 55%, #e80000 100%);
+  width: 100%;
+  opacity: 0.85;
+  position: relative;
+}
+.large-hero__logo-image {
+  z-index: 2;
+  opacity: 1;
+  width: 100%;
+  height: auto;
+}
+.large-hero__description {
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 50%;
+}
+.large-hero__description__intro {
+  font-size: 2rem;
+}
+.large-hero__description__company-name {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.large-hero__description__company-text {
+  text-transform: lowercase;
+  width: 900px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-justify: auto;
+  margin: 25px 0 50px 0;
+}
+.large-hero .blue {
+  background: linear-gradient(329deg, #19d13e 0%, #1e4a91 100%);
+}

@@ -45,7 +45,7 @@ function styles() {
         cascade: false
      }))
      //minify the css file
-      .pipe(minifyCSS())
+      //.pipe(minifyCSS())
       //alocate the CSS file to the public folder
       .pipe(dest('app/public/styles'))
       //Stream changes to all browsers

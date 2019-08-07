@@ -1,0 +1,42 @@
+@import "app/assets/styles/base/_variables.less";
+
+.large-hero{
+  background: @bgRed;
+  width: 100%;
+  opacity: .85;
+  position: relative;
+  &__logo-image{
+    z-index: 2;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  &__description{
+    text-transform: uppercase;
+    color: @white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+  }
+  &__description__intro{
+    font-size: 2rem;
+  }
+  &__description__company-name{
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  &__description__company-text{
+    text-transform: lowercase;
+    width: 900px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-justify: auto;
+    margin: 25px 0 50px 0;
+  }
+  .blue{
+    background: @bgBlue;
+  }
+}
