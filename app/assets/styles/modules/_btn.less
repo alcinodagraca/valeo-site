@@ -8,7 +8,27 @@
  border-radius: 40px 5px 40px 40px;
  color: @white;
 
+ &:hover{
+  background: transparent;
+  border: 2px solid @divider;
+  color: @black;
+ }
+ 
  .blue{
    background: @bgBlue;
+ }
+ &-medium{
+   width: 170px;
+   height: 50px;
+ }
+ &-bgWhite{
+   background: transparent;
+   border: 2px solid @divider;
+   color: @black;
+   &:hover{
+     background: @bgRed;
+     color: @white;
+     border: none;
+   }
  }
 }

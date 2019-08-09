@@ -1,5 +1,6 @@
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,800&display=swap');
+@import "app/assets/styles/base/_variables.less";
 
 //Container
 .container{
@@ -10,4 +11,37 @@
 body{
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  background: transparent;
+}
+p, h1, h2, h3, span, b{
+  color: @black;
+}
+#sessionTitle(){
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+#titleDivider() {
+  &::after{
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: @divider;
+    display: block;
+    margin-top: 25px;
+  }
+}
+
+#hr(){
+  &::after{
+    content: "";
+    width: 95%;
+    height: 1px;
+    background: @grey;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }

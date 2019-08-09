@@ -1,5 +1,43 @@
 @import "app/assets/styles/base/_variables.less";
 
-#large-hero{
+.header{
+  height: 90px;
+	width: 100%;
+  background-color: #fff;
+  text-transform: uppercase;
+
+  &__logotipo{
+    width: 30%;
+    float: left;
+
+    & p{
+      padding-top: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+  &__top-navegation{
+    width: 60%;
+    float: right;
+
+    &__main-nav{
+      padding-top: 5px;
+      float: right;
+  
+      &__menu{
+        list-style: none;
+        
+        &__menu-item{
+          display: inline;
+          color: #fff;
+          margin-right: 20px;
+          a{
+            text-decoration: none;
+          }
+        }
+        
+      }
+    }
+  }
 
 }
