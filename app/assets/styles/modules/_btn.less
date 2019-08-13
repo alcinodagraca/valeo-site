@@ -3,10 +3,11 @@
 .btn{
  width: 200px;
  height: 60px;
- background: @bgRed; 
+ background: @divider; 
  border: none;
  border-radius: 40px 5px 40px 40px;
  color: @white;
+ font-size: 0.8125rem;
 
  &:hover{
   background: transparent;
@@ -14,8 +15,13 @@
   color: @black;
  }
  
- .blue{
-   background: @bgBlue;
+ &-blue{
+   background:#19d13e;
+   
+   &:hover{
+    border: 2px solid #19d13e;
+    color: @white;
+  }
  }
  &-medium{
    width: 170px;
@@ -30,5 +36,13 @@
      color: @white;
      border: none;
    }
+ }
+ &-center{
+  // padding: 0;
+  // margin: 0;
+  // list-style: none;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
  }
 }

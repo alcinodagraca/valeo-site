@@ -1,3 +1,72 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Poppins Thin'), local('Poppins-Thin'), url(https://fonts.gstatic.com/s/poppins/v8/pxiGyp8kv8JHgFVrLPTucHtF.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Poppins ExtraLight'), local('Poppins-ExtraLight'), url(https://fonts.gstatic.com/s/poppins/v8/pxiByp8kv8JHgFVrLFj_Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v8/pxiByp8kv8JHgFVrLDz8Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v8/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v8/pxiByp8kv8JHgFVrLGT9Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v8/pxiByp8kv8JHgFVrLEj6Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'), url(https://fonts.gstatic.com/s/poppins/v8/pxiByp8kv8JHgFVrLDD4Z1xlEA.ttf) format('truetype');
+}
+.container {
+  max-width: 1279px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: transparent;
+}
+p,
+h1,
+h2,
+h3,
+span,
+b {
+  color: #071e3c;
+}
 .large-hero {
   background: linear-gradient(329deg, #b900c9 19%, #CD006F 55%, #e80000 100%);
   width: 100%;
@@ -19,26 +88,23 @@
 }
 .large-hero__description__intro {
   text-transform: uppercase;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #fff;
-  font-weight: 300;
-}
-.large-hero__description__company-name {
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 2.25rem;
-  font-weight: 500;
-  color: #fff;
+  font-weight: 400;
 }
 .large-hero__description__company-text {
   width: 70%;
-  font-size: 1.5rem;
-  font-weight: 200;
-  margin: 25px 0 50px 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 15px 0 50px 0;
   color: #fff;
   letter-spacing: 2.5px;
   line-height: 1.4;
 }
-.large-hero .blue {
-  background: linear-gradient(329deg, #19d13e 0%, #1e4a91 100%);
+.large-hero__description__company-text a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #19d13e;
+  text-decoration-color: #19d13e;
+  font-size: 1.7rem;
+  font-weight: 400;
 }

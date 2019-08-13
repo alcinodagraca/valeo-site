@@ -407,6 +407,27 @@ template {
   margin-right: auto;
 }
 body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: transparent;
+}
+p,
+h1,
+h2,
+h3,
+span,
+b {
+  color: #071e3c;
+}
+.container {
+  max-width: 1279px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -441,28 +462,25 @@ b {
 }
 .large-hero__description__intro {
   text-transform: uppercase;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #fff;
-  font-weight: 300;
-}
-.large-hero__description__company-name {
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 2.25rem;
-  font-weight: 500;
-  color: #fff;
+  font-weight: 400;
 }
 .large-hero__description__company-text {
   width: 70%;
-  font-size: 1.5rem;
-  font-weight: 200;
-  margin: 25px 0 50px 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 15px 0 50px 0;
   color: #fff;
   letter-spacing: 2.5px;
   line-height: 1.4;
 }
-.large-hero .blue {
-  background: linear-gradient(329deg, #19d13e 0%, #1e4a91 100%);
+.large-hero__description__company-text a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #19d13e;
+  text-decoration-color: #19d13e;
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 .header {
   height: 90px;
@@ -492,27 +510,34 @@ b {
 }
 .header__top-navegation__main-nav__menu__menu-item {
   display: inline;
-  color: #fff;
   margin-right: 20px;
+  font-weight: 500;
+  font-size: 0.8125rem;
 }
 .header__top-navegation__main-nav__menu__menu-item a {
   text-decoration: none;
+  color: #4e4e4e;
 }
 .btn {
   width: 200px;
   height: 60px;
-  background: linear-gradient(329deg, #b900c9 19%, #CD006F 55%, #e80000 100%);
+  background: #E12B3E;
   border: none;
   border-radius: 40px 5px 40px 40px;
   color: #fff;
+  font-size: 0.8125rem;
 }
 .btn:hover {
   background: transparent;
   border: 2px solid #E12B3E;
   color: #071e3c;
 }
-.btn .blue {
-  background: linear-gradient(329deg, #19d13e 0%, #1e4a91 100%);
+.btn-blue {
+  background: #19d13e;
+}
+.btn-blue:hover {
+  border: 2px solid #19d13e;
+  color: #fff;
 }
 .btn-medium {
   width: 170px;
@@ -531,25 +556,6 @@ b {
 .costumers {
   background: #f1f1f1;
   height: 140px;
-}
-.container {
-  max-width: 1279px;
-  margin-left: auto;
-  margin-right: auto;
-}
-body {
-  font-family: 'Poppins', sans-serif;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background: transparent;
-}
-p,
-h1,
-h2,
-h3,
-span,
-b {
-  color: #071e3c;
 }
 .whoWeAre {
   height: 800px;
@@ -584,7 +590,7 @@ b {
   margin-top: 25px;
 }
 .whoWeAre__left-content__subtitle {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1.2;
   width: 90%;
 }
@@ -626,9 +632,24 @@ b {
   width: 450px;
   height: 500px;
 }
+.column {
+  float: left;
+}
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+}
 .whatWeDo {
+  clear: both;
   background: #f1f1f1;
   height: 800px;
+  width: 100%;
+}
+.whatWeDo > .btn {
+  width: 100%;
+  margin: 0 auto;
 }
 .whatWeDo__header__title {
   padding-top: 100px;
@@ -657,12 +678,81 @@ b {
   float: left;
   width: 100%;
 }
-.whatWeDo__services__item__icon {
+.whatWeDo__services__item__icon__box__i {
   float: left;
   width: 120px;
   height: 120px;
   background: #071e3c;
+  margin-right: 20px;
 }
-.whatWeDo__services__item__title {
+.whatWeDo__services__item__description__the-service__title {
+  display: block;
   text-transform: uppercase;
+}
+.whatWeDo__services__item__description__the-service-the-desc {
+  width: 460px;
+}
+.whatWeDo__btn {
+  margin: 0 auto;
+}
+.callUs {
+  clear: both;
+  height: 400px;
+  background: linear-gradient(329deg, #b900c9 19%, #CD006F 55%, #e80000 100%);
+  position: relative;
+}
+.callUs__content {
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 50%;
+}
+.callUs__title {
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  font-weight: 200;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.callUs__title::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background: #E12B3E;
+  display: block;
+  margin-top: 25px;
+}
+.callUs__title::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background: #E12B3E;
+  display: block;
+  margin-top: 25px;
+}
+.callUs__title::after {
+  background: #fff;
+}
+.callUs__title b {
+  color: #fff;
+}
+.callUs__numbers,
+.callUs__text {
+  color: #fff;
+  width: 400px;
+  font-weight: 300;
+}
+.callUs__col {
+  float: left;
+}
+.callUs .left,
+.callUs .right {
+  width: 50%;
+}
+.testimonials {
+  clear: both;
+  width: 100%;
+  height: 800px;
 }

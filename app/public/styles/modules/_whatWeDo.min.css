@@ -53,6 +53,7 @@
   margin-right: auto;
 }
 body {
+  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -66,9 +67,24 @@ span,
 b {
   color: #071e3c;
 }
+.column {
+  float: left;
+}
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+}
 .whatWeDo {
+  clear: both;
   background: #f1f1f1;
   height: 800px;
+  width: 100%;
+}
+.whatWeDo > .btn {
+  width: 100%;
+  margin: 0 auto;
 }
 .whatWeDo__header__title {
   padding-top: 100px;
@@ -89,12 +105,20 @@ b {
   float: left;
   width: 100%;
 }
-.whatWeDo__services__item__icon {
+.whatWeDo__services__item__icon__box__i {
   float: left;
   width: 120px;
   height: 120px;
   background: #071e3c;
+  margin-right: 20px;
 }
-.whatWeDo__services__item__title {
+.whatWeDo__services__item__description__the-service__title {
+  display: block;
   text-transform: uppercase;
+}
+.whatWeDo__services__item__description__the-service-the-desc {
+  width: 460px;
+}
+.whatWeDo__btn {
+  margin: 0 auto;
 }

@@ -1,0 +1,44 @@
+@import "app/assets/styles/base/_variables.less";
+@import "app/assets/styles/base/_global.less";
+
+.callUs{
+  clear: both;
+  height: 400px;
+  background: @bgRed;
+  position: relative;
+
+  &__content{
+    color: @white;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 50%;
+  }
+  &__title{
+    #sessionTitle();
+    color: @white;
+
+    #titleDivider();
+    &::after{
+      background: @white;
+    }
+    b{
+      color: @white;
+    }
+  }
+
+  &__numbers, &__text{
+    color: @white;
+    width: 400px; 
+    font-weight: 300;
+  }
+  &__col{
+    float: left;
+  }
+
+  .left, .right{
+    width: 50%;
+  }
+
+
+}

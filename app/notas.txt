@@ -1,0 +1,9 @@
+//Top Menu
+O menu que fica no topo do site contém todas as páginas disponíveis dentro do site
+
+//Banner
+O banner contém imagens, butão de serviços, uma imagem (que deverá ser substituida por uma foto local) textos qu e ainda não tenho a certeza de serem a melhor opção 
+e um gradiente que não tenho a certeza se fica ou não
+
+//Clientes
+Uma pequena lista dos principais clientes

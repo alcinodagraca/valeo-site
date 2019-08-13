@@ -67,61 +67,8 @@ span,
 b {
   color: #071e3c;
 }
-.whoWeAre {
+.testimonials {
+  clear: both;
+  width: 100%;
   height: 800px;
-  -webkit-transform: translateX(20px);
-  transform: translateX(20px);
-}
-.whoWeAre__left-content {
-  float: left;
-  width: 50%;
-  padding-top: 120px;
-}
-.whoWeAre__left-content__title {
-  text-transform: uppercase;
-  font-size: 2.25rem;
-  font-weight: 200;
-  margin-bottom: 40px;
-}
-.whoWeAre__left-content__title::after {
-  content: "";
-  width: 80px;
-  height: 2px;
-  background: #E12B3E;
-  display: block;
-  margin-top: 25px;
-}
-.whoWeAre__left-content__subtitle {
-  font-size: 1.3rem;
-  line-height: 1.2;
-  width: 90%;
-}
-.whoWeAre__left-content__subtitle::after {
-  content: "";
-  width: 95%;
-  height: 1px;
-  background: #f1f1f1;
-  display: block;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.whoWeAre__left-content__text {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  width: 85%;
-  margin-bottom: 40px;
-}
-.whoWeAre__right-content {
-  padding-top: 120px;
-  float: right;
-  width: 50%;
-}
-.whoWeAre__right-content__iframe {
-  -webkit-box-shadow: 1px 0.5px 2px #E12B3E;
-  box-shadow: 1px 0.5px 2px #E12B3E;
-  margin-top: 30px;
-  border: none;
-  margin-left: 100px;
-  width: 450px;
-  height: 500px;
 }

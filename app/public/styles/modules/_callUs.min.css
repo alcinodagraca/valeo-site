@@ -67,23 +67,28 @@ span,
 b {
   color: #071e3c;
 }
-.whoWeAre {
-  height: 800px;
-  -webkit-transform: translateX(20px);
-  transform: translateX(20px);
+.callUs {
+  clear: both;
+  height: 400px;
+  background: linear-gradient(329deg, #b900c9 19%, #CD006F 55%, #e80000 100%);
+  position: relative;
 }
-.whoWeAre__left-content {
-  float: left;
+.callUs__content {
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 50%;
-  padding-top: 120px;
 }
-.whoWeAre__left-content__title {
+.callUs__title {
   text-transform: uppercase;
   font-size: 2.25rem;
   font-weight: 200;
   margin-bottom: 40px;
+  color: #fff;
 }
-.whoWeAre__left-content__title::after {
+.callUs__title::after {
   content: "";
   width: 80px;
   height: 2px;
@@ -91,37 +96,22 @@ b {
   display: block;
   margin-top: 25px;
 }
-.whoWeAre__left-content__subtitle {
-  font-size: 1.3rem;
-  line-height: 1.2;
-  width: 90%;
+.callUs__title::after {
+  background: #fff;
 }
-.whoWeAre__left-content__subtitle::after {
-  content: "";
-  width: 95%;
-  height: 1px;
-  background: #f1f1f1;
-  display: block;
-  margin-top: 40px;
-  margin-bottom: 40px;
+.callUs__title b {
+  color: #fff;
 }
-.whoWeAre__left-content__text {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  width: 85%;
-  margin-bottom: 40px;
+.callUs__numbers,
+.callUs__text {
+  color: #fff;
+  width: 400px;
+  font-weight: 300;
 }
-.whoWeAre__right-content {
-  padding-top: 120px;
-  float: right;
+.callUs__col {
+  float: left;
+}
+.callUs .left,
+.callUs .right {
   width: 50%;
-}
-.whoWeAre__right-content__iframe {
-  -webkit-box-shadow: 1px 0.5px 2px #E12B3E;
-  box-shadow: 1px 0.5px 2px #E12B3E;
-  margin-top: 30px;
-  border: none;
-  margin-left: 100px;
-  width: 450px;
-  height: 500px;
 }
