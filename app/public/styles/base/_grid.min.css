@@ -1,0 +1,23 @@
+.row--gutters > div {
+  padding-right: 65px;
+}
+.row__6 {
+  float: left;
+  width: 50%;
+}
+.row__4 {
+  float: left;
+  width: 33.33%;
+}
+.row__8 {
+  float: left;
+  width: 66.66%;
+}
+.row__5 {
+  float: left;
+  width: 41.66666667%;
+}
+.row__7 {
+  float: left;
+  width: 58.33333333%;
+}

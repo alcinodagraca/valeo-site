@@ -6,4 +6,53 @@ O banner contém imagens, butão de serviços, uma imagem (que deverá ser subst
 e um gradiente que não tenho a certeza se fica ou não
 
 //Clientes
-Uma pequena lista dos principais clientes
+Uma pequena lista dos principais clientes...
+Em preto em branco, não terá mais nada em especial, na Página sobre Empresa, terá uma 'animação sobre isso'
+
+
+
+
+
+
+  <div class="container">
+      <div class="services__header">
+        <p class="services__header__title"><b>Quem</b> somos?</p>
+      </div>
+      <!-- Fim do Header -->
+      
+      <!-- Two Columns Grid -->
+      <div class="row">
+        <div class="row__6">
+
+
+          <!-- Lista de Serviços Prestados Pela Empresa -->
+          <div class="services__service">
+            <!-- Icon -->
+            <div class="services__service__item">
+              <i class="icon"></i>  
+              <p class="services__services__item__title">Descrição do serviço</p>
+            </div>
+
+            <!-- Description -->
+            <div class="services__service__description">
+              <p class="services__service__item__description__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Optio ipsa dolorum cumque voluptatibus sapiente reiciendis. 
+              </p>
+            </div>
+            
+
+        </div>
+        <!-- Fim da Primeira -->
+
+
+        <div class="row__6">
+
+        </div>
+        <!-- Fim da Segunda -->
+    </div>
+
+
+    </div>
+    </div>
+  </section>

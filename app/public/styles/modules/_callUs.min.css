@@ -48,12 +48,13 @@
   src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'), url(https://fonts.gstatic.com/s/poppins/v8/pxiByp8kv8JHgFVrLDD4Z1xlEA.ttf) format('truetype');
 }
 .container {
-  max-width: 1279px;
+  padding: 0 18px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 }
 body {
-  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -66,6 +67,10 @@ h3,
 span,
 b {
   color: #071e3c;
+}
+iframe,
+img {
+  max-width: 100%;
 }
 .callUs {
   clear: both;
@@ -85,7 +90,6 @@ b {
   text-transform: uppercase;
   font-size: 2.25rem;
   font-weight: 200;
-  margin-bottom: 40px;
   color: #fff;
 }
 .callUs__title::after {

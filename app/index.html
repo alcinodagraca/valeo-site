@@ -24,7 +24,7 @@
             <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Clientes</a></li>
             <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Portifólio</a></li>
             <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">A Empresa</a></li>
-            <button class="btn btn-medium">Contacte-nos</button>
+            <button class="btn btn-medium btn-white">Contacte-nos</button>
           </ul>
         </nav>  
       </div>
@@ -35,7 +35,12 @@
   mas por enquanto vamos manter assim -->
 
   <div class="large-hero">
-      <div class="large-hero__bg"><img src="assets/img/large-hero-bg.svg" alt="Background-photo" class="large-hero__logo-image"></div>
+      <div class="large-hero__bg">
+        <!-- <picture>
+          <source class="large-hero__logo-image" media="(min-width: 1200px)" srcset="assets/img/large-hero-bg.svg">
+          <img class="large-hero__logo-image-sm" src="assets/img/large-hero-small.svg" alt="Man in the printing Machine in our Studio">
+        </picture> -->
+      </div>
       <div class="container">
         <div class="large-hero__description">
           <span class="large-hero__description__intro">Somos Valeo Serviços:</span>
@@ -44,7 +49,7 @@
               muito <a>profissionalismo</a>, <a>seriedade </a> e <a>qualidade</a>  que permita oferecer soluções
               integradas, no trato e garantia de serviços ao cliente.
           </p>
-          <button class="btn large-hero__btn btn-blue btn-medium">Serviços</button>
+          <button class="btn large-hero__btn btn-white btn-medium">Serviços</button>
         </div>
       </div>
   </div>
@@ -65,26 +70,28 @@
       <span class="costumers__item">cliente 10</span>
     </div>
   </section>
-  <section class="whoWeAre">
+
+
+  <section class="whoWeAre page-session">
     <div class="container">
-      <div class="whoWeAre__left-content">
+      <div class="row">
+       <div class="row__7">
         <div class="whoWeAre__left-content__description">
-            <p class="whoWeAre__left-content__title desktop-visibe">Quem <b>somos?</b></p>
-            <!-- <div class="divider"></div> -->
-            <p class="whoWeAre__left-content__subtitle">desde o nascimento, para responder e satisfazer aos seus
-              clientes, com imenso prazer.
+          <p class="whoWeAre__left-content__title desktop-visibe">Quem <b>somos?</b></p>
+          <p class="whoWeAre__left-content__subtitle">desde o nascimento, para responder e satisfazer aos seus
+            clientes, com imenso prazer.
+          </p>
+          <p class="whoWeAre__left-content__text">A Valeo Serviços, esta no mercado desde 2003, todo este tempo, tem dedicado
+              muito profissionalismo, seriedade e qualidade que permita oferecer soluções
+              integradas, no trato e garantia de serviços ao cliente. 
             </p>
-            <p class="whoWeAre__left-content__text">A Valeo Serviços, esta no mercado desde 2003, todo este tempo, tem dedicado
-                muito profissionalismo, seriedade e qualidade que permita oferecer soluções
-                integradas, no trato e garantia de serviços ao cliente. 
-              </p>
-            <button class="large-hero__description__btn btn btn-bgWhite">Saiba mais</button>
-        </div>
+          <button class="large-hero__description__btn btn btn-bgWhite">Saiba mais</button>
       </div>
-      
+       </div>
+       
 
       <!-- Adicionar um Fallback, usar um poster(imagem) para navegadores que não suportam vídeos -->
-      <div class="whoWeAre__right-content">
+      <div class="row__5">
         <div class="whoWeAre__video-presentation">
             <iframe class="whoWeAre__right-content__iframe"
             src="https://www.youtube.com/embed/07o-h5StVsI" allowfullscreen>
@@ -92,124 +99,86 @@
         </div>
       </div>
     </div>
+      
+
+ 
+    </div>
   </section>
 
-  <section class="whatWeDo">
+
+
+
+
+
+
+
+
+  <section class="services">
     <div class="container">
-      <div class="whatWeDo__header">
-        <p class="whatWeDo__header__title"><b>Quem</b> somos?</p>
-    </div>
-    <div class="column left">
-      <div class="whatWeDo__services__item">
-        <div class="whatWeDo__services__item__icon__box">
-          <p class="whatWeDo__services__item__icon__box__i">icon</p>
-        </div>
-
-        <div class="whatWeDo__services__item__description__the-service">
-          <p class="whatWeDo__services__item__description__the-service__title">Descrição do serviço</p>
-          <p class="whatWeDo__services__item__description__the-service-the-desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Optio ipsa dolorum cumque voluptatibus sapiente reiciendis. 
-          </p>
-       </div> 
-       
-    </div>
-
-
-    <div class="whatWeDo__services__item">
-      <div class="whatWeDo__services__item__icon__box">
-        <p class="whatWeDo__services__item__icon__box__i">icon</p>
+      <div class="services__header">
+        <p class="services__header__title"><b>Quem</b> somos?</p>
       </div>
+      <!-- Fim do Header -->
 
-      <div class="whatWeDo__services__item__description__the-service">
-        <p class="whatWeDo__services__item__description__the-service__title">Descrição do serviço</p>
-        <p class="whatWeDo__services__item__description__the-service-the-desc">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-          Optio ipsa dolorum cumque voluptatibus sapiente reiciendis. 
-        </p>
-     </div> 
-     
-  </div>
-
-
-    <div class="whatWeDo__services__item">
-      <div class="whatWeDo__services__item__icon__box">
-        <p class="whatWeDo__services__item__icon__box__i">icon</p>
-      </div>
-
-      <div class="whatWeDo__services__item__description__the-service">
-        <p class="whatWeDo__services__item__description__the-service__title">Descrição do serviço</p>
-        <p class="whatWeDo__services__item__description__the-service-the-desc">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-          Optio ipsa dolorum cumque voluptatibus sapiente reiciendis. 
-        </p>
-     </div> 
-     
-  </div>
-
-
-    </div>
-    <div class="column right">
-          <div class="whatWeDo__services__item">
-              <div class="whatWeDo__services__item__icon__box">
-                <p class="whatWeDo__services__item__icon__box__i">icon</p>
-              </div>
-
-              <div class="whatWeDo__services__item__description__the-service">
-                <p class="whatWeDo__services__item__description__the-service__title">Descrição do serviço</p>
-                <p class="whatWeDo__services__item__description__the-service-the-desc">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                  Optio ipsa dolorum cumque voluptatibus sapiente reiciendis. 
-                </p>
-             </div> 
-          </div>
-
-          <div class="whatWeDo__services__item">
-            <div class="whatWeDo__services__item__icon__box">
-              <p class="whatWeDo__services__item__icon__box__i">icon</p>
+      <div class="row__6">
+        <!-- Lista de Serviços Prestados Pela Empresa -->
+        <div class="services__service">
+            <!-- Icon -->
+            <div class="services__service__item">
+              <i class="icon"></i>  
+              <p class="services__services__item__title">Descrição do serviço</p>
             </div>
 
-            <div class="whatWeDo__services__item__description__the-service">
-              <p class="whatWeDo__services__item__description__the-service__title">Descrição do serviço</p>
-              <p class="whatWeDo__services__item__description__the-service-the-desc">
+            <!-- Description -->
+            <div class="services__service__description">
+              <p class="services__service__item__description__text">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Optio ipsa dolorum cumque voluptatibus sapiente reiciendis. 
               </p>
-           </div> 
+            </div>
         </div>
+      </div>
 
-        <div class="whatWeDo__services__item">
-          <div class="whatWeDo__services__item__icon__box">
-            <p class="whatWeDo__services__item__icon__box__i">icon</p>
+
+      <div class="row__6">
+        <!-- Lista de Serviços Prestados Pela Empresa -->
+        <div class="services__service">
+          <!-- Icon -->
+          <div class="services__service__item">
+            <i class="icon"></i>  
+            <p class="services__services__item__title">Descrição do serviço</p>
           </div>
 
-          <div class="whatWeDo__services__item__description__the-service">
-            <p class="whatWeDo__services__item__description__the-service__title">Descrição do serviço</p>
-            <p class="whatWeDo__services__item__description__the-service-the-desc">
+          <!-- Description -->
+          <div class="services__service__description">
+            <p class="services__service__item__description__text">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
               Optio ipsa dolorum cumque voluptatibus sapiente reiciendis. 
             </p>
-         </div> 
+          </div>
+        </div>
       </div>
-    
-      </div> 
-
-      <button class="WhatWeDo__btn btn medium btn-bgWhite btn-center">Ver todos</button> 
     </div>
   </section>
 
+
+
+
+
+
+
+
+
     <section class="callUs">
       <div class="container">
-        <div class="callUs__content">
-          <div class="callUs__col left">
+        <div class="row__6">
             <p class="callUs__title">Falemos de <b>Negócios</b></p>
             <p class="callUs__text">Entre em contacto por Chamada Telefónica ou por WhatsApp</p>
             <p class="callUs__numbers">(+258) 84 51 000 01 / 84 51 000 01</p>
-          </div>
-          <div class="callUs__col right">
-            <p class="callUs__title">Peça o seu <b>orçamento</b> </p>
-            <button class="btn btn-medium">Enviar e-mail</button> 
-          </div>
+        </div>
+        <div class="row__6">
+          <p class="callUs__title">Peça o seu <b>orçamento</b> </p>
+          <button class="btn btn-medium">Enviar e-mail</button>
         </div>
       </div>
     </section>

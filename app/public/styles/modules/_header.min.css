@@ -1,7 +1,7 @@
 .header {
   height: 90px;
   width: 100%;
-  background-color: #fff;
+  background-color: #E12B3E;
   text-transform: uppercase;
 }
 .header__logotipo {
@@ -12,6 +12,7 @@
   padding-top: 20px;
   text-transform: uppercase;
   font-weight: 500;
+  color: #fff;
 }
 .header__top-navegation {
   width: 60%;
@@ -32,5 +33,5 @@
 }
 .header__top-navegation__main-nav__menu__menu-item a {
   text-decoration: none;
-  color: #4e4e4e;
+  color: #fff;
 }

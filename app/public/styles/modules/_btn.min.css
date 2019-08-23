@@ -12,10 +12,11 @@
   border: 2px solid #E12B3E;
   color: #071e3c;
 }
-.btn-blue {
-  background: #19d13e;
+.btn-white {
+  border: #fff 1px solid;
+  background: transparent;
 }
-.btn-blue:hover {
+.btn-white:hover {
   border: 2px solid #19d13e;
   color: #fff;
 }
