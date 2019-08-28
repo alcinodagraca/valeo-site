@@ -55,10 +55,16 @@
   overflow-x: hidden;
 }
 body {
+  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background: transparent;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: visible;
 }
 p,
 h1,
@@ -68,6 +74,27 @@ span,
 b {
   color: #071e3c;
 }
+#subtitle {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+@media (min-width: 991px) {
+  #subtitle {
+    font-size: 1.3rem;
+  }
+}
+#text {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+@media (min-width: 991px) {
+  #text {
+    font-size: 1.125rem;
+  }
+}
+#text--white {
+  color: #fff;
+}
 iframe,
 img {
   max-width: 100%;
@@ -76,12 +103,22 @@ img {
   background: #E12B3E;
   width: 100%;
   position: relative;
-  height: 650px;
+  height: 450px;
+}
+@media (min-width: 991px) {
+  .large-hero {
+    height: 650px;
+  }
+}
+.large-hero__description {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-60%);
+  transform: translateY(-60%);
+  width: 100%;
 }
 @media (min-width: 991px) {
   .large-hero__description {
-    position: absolute;
-    top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 50%;
@@ -94,18 +131,23 @@ img {
   font-weight: 400;
 }
 .large-hero__description__company-text {
-  width: 60%;
-  font-size: 1.4rem;
+  width: 95%;
+  font-size: 1rem;
   font-weight: 300;
-  margin: 15px 0 50px 0;
   color: #fff;
   letter-spacing: 2.5px;
-  line-height: 1.4;
+  line-height: 1.7;
+}
+@media (min-width: 991px) {
+  .large-hero__description__company-text {
+    width: 60%;
+    font-size: 1.4rem;
+  }
 }
 .large-hero__description__company-text a {
   text-decoration: underline;
   -webkit-text-decoration-color: #19d13e;
   text-decoration-color: #19d13e;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }

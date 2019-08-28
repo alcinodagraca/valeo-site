@@ -55,10 +55,16 @@
   overflow-x: hidden;
 }
 body {
+  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background: transparent;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: visible;
 }
 p,
 h1,
@@ -68,13 +74,40 @@ span,
 b {
   color: #071e3c;
 }
+#subtitle {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+@media (min-width: 991px) {
+  #subtitle {
+    font-size: 1.3rem;
+  }
+}
+#text {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+@media (min-width: 991px) {
+  #text {
+    font-size: 1.125rem;
+  }
+}
+#text--white {
+  color: #fff;
+}
 iframe,
 img {
   max-width: 100%;
 }
 .page-session {
-  padding-top: 100px;
-  height: 700px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+@media (min-width: 991px) {
+  .page-session {
+    padding-top: 100px;
+    height: 700px;
+  }
 }
 .page-session--grey {
   background: #f1f1f1;

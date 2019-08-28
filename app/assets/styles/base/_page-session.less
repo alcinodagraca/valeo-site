@@ -1,9 +1,14 @@
 @import "app/assets/styles/base/_variables.less";
 @import "app/assets/styles/base/_global.less";
+@import "app/assets/styles/base/_mixins.less";
 
 .page-session{
-  padding-top: 100px;
-  height: 700px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  @media @desktop-up{
+    padding-top: 100px;
+    height: 700px;
+  }
   &--grey {
     background: @grey;
   }

@@ -1,32 +1,43 @@
+@import "app/assets/styles/base/_mixins.less";
 .row{
 
   &--gutters > div{
     padding-right: 65px;
   }
-
-  &__6{
-    float: left;
-    width: 50%;
+  @media @desktop-up{
+    &__lg-6{
+      float: left;
+      width: 50%;
+    }
+  
+    &__lg-4{
+      float: left;
+      width: 33.33%
+    }
+  
+    &__lg-8{
+      float: left;
+      width: 66.66%;
+    }
+  
+    &__lg-5 {
+      float: left;
+      width: 41.6666666667%;
+    }
+  
+    &__lg-7 {
+      float: left;
+      width: 58.3333333333%;
+    }
+  
+    &__lg-2{
+      float: left;
+      width: 16.6666666667%;
+    }
+  
+    &__lg-10 {
+      float: left;
+      width: 83.3333333333%;
+    }
   }
-
-  &__4{
-    float: left;
-    width: 33.33%
-  }
-
-  &__8{
-    float: left;
-    width: 66.66%;
-  }
-
-  &__5 {
-    float: left;
-    width: 41.6666666667%;
-  }
-
-  &__7 {
-    float: left;
-    width: 58.3333333333%;
-  }
-
 }

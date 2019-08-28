@@ -1,11 +1,17 @@
 .btn {
-  width: 200px;
-  height: 60px;
+  width: 150px;
+  height: 50px;
   background: #E12B3E;
   border: none;
   border-radius: 40px 5px 40px 40px;
   color: #fff;
   font-size: 0.8125rem;
+}
+@media (min-width: 767px) {
+  .btn {
+    width: 200px;
+    height: 60px;
+  }
 }
 .btn:hover {
   background: transparent;

@@ -55,10 +55,16 @@
   overflow-x: hidden;
 }
 body {
+  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background: transparent;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: visible;
 }
 p,
 h1,
@@ -68,41 +74,72 @@ span,
 b {
   color: #071e3c;
 }
+#subtitle {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+@media (min-width: 991px) {
+  #subtitle {
+    font-size: 1.3rem;
+  }
+}
+#text {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+@media (min-width: 991px) {
+  #text {
+    font-size: 1.125rem;
+  }
+}
+#text--white {
+  color: #fff;
+}
 iframe,
 img {
   max-width: 100%;
 }
-.whatWeDo__header__title {
+.services__header__title {
   text-transform: uppercase;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   font-weight: 200;
 }
-.whatWeDo__header__title::after {
+@media (min-width: 991px) {
+  .services__header__title {
+    font-size: 2rem;
+  }
+}
+.services__header__title::after {
   content: "";
-  width: 80px;
-  height: 2px;
+  width: 60px;
+  height: 1px;
   background: #E12B3E;
   display: block;
-  margin-top: 25px;
+  margin-top: 20px;
 }
-.whatWeDo__services__item {
+@media (min-width: 991px) {
+  .services__header__title::after {
+    height: 2px;
+  }
+}
+.services__services__item {
   float: left;
   width: 100%;
 }
-.whatWeDo__services__item__icon__box__i {
+.services__services__item__icon__box__i {
   float: left;
   width: 120px;
   height: 120px;
   background: #071e3c;
   margin-right: 20px;
 }
-.whatWeDo__services__item__description__the-service__title {
+.services__services__item__description__the-service__title {
   display: block;
   text-transform: uppercase;
 }
-.whatWeDo__services__item__description__the-service-the-desc {
+.services__services__item__description__the-service-the-desc {
   width: 460px;
 }
-.whatWeDo__btn {
+.services__btn {
   margin: 0 auto;
 }

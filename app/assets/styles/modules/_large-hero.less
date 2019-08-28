@@ -6,18 +6,19 @@
   background: @divider;
   width: 100%;
   position: relative;
-  height: 650px;
+  height: 450px;
 
+  @media @desktop-up{
+    height: 650px;
+  }
 
   &__description{
-    // position: absolute;
-    // top: 50%;
-    // transform: translateY(-50%);
-    // width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    width: 100%;
 
     @media @desktop-up{
-      position: absolute;
-      top: 50%;
       transform: translateY(-50%);
       width: 50%;
     }
@@ -31,18 +32,22 @@
   }
 
   &__description__company-text{
-    width: 60%;
-    font-size: 1.4rem;
+    width: 95%;
+    font-size: 1rem;
     font-weight: 300;
-    margin: 15px 0 50px 0;
     color: @white;
     letter-spacing: 2.5px;
-    line-height: 1.4;
+    line-height: 1.7;
+
+    @media @desktop-up{
+      width: 60%;
+      font-size: 1.4rem;
+    }
 
     a{
       text-decoration: underline;
       text-decoration-color: @green;
-      font-size: 1.7rem;
+      font-size: 1.2rem;
       font-weight: 400;
     }
   }

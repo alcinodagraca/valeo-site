@@ -1,6 +1,7 @@
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,800&display=swap');
 @import "app/assets/styles/base/_variables.less";
+@import "app/assets/styles/base/_mixins.less";
 
 //Container
 .container{
@@ -11,9 +12,14 @@
   overflow-x: hidden;
 }
 body{
+  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   background: transparent;
+}
+* {
+  box-sizing: border-box;
+  overflow: visible;
 }
 p, h1, h2, h3, span, b{
   color: @black;
@@ -21,30 +27,65 @@ p, h1, h2, h3, span, b{
 
 #sessionTitle(){
   text-transform: uppercase;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   font-weight: 200;
+
+  @media @desktop-up{
+    font-size: 2rem;
+  }
 }
 
 #titleDivider() {
   &::after{
     content: "";
-    width: 80px;
-    height: 2px;
+    width: 60px;
+    height: 1px;
     background: @divider;
     display: block;
-    margin-top: 25px;
+    margin-top: 20px;
+
+    @media @desktop-up{
+      height: 2px;
+    }
   }
 }
 
 #hr(){
   &::after{
     content: "";
-    width: 95%;
+    width: 100%;
     height: 1px;
     background: @grey;
     display: block;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media @desktop-up{
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+#subtitle{
+  font-size: 1rem;
+  line-height: 1.2;
+
+  @media @desktop-up{
+    font-size: 1.3rem;
+  }
+}
+
+#text{
+  font-size: .9rem;
+  line-height: 1.8;
+
+  @media @desktop-up{
+    font-size: 1.125rem;
+  }
+
+  &--white{
+    color: @white;
   }
 }
 iframe,img{

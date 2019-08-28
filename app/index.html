@@ -10,23 +10,28 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__logotipo">
-        <!-- <img src="" alt="Valeo" class="logo"> -->
-        <p>Valeo Serviços</p>
-      </div>
-
-      <!-- Menu do topo, contém todas as páginas do site-->
-      <div class="header__top-navegation">
-        <nav class="header__top-navegation__main-nav">
-          <ul class="header__top-navegation__main-nav__menu">
-            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Productos</a></li>
-            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Serviços</a></li>
-            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Clientes</a></li>
-            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Portifólio</a></li>
-            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">A Empresa</a></li>
-            <button class="btn btn-medium btn-white">Contacte-nos</button>
-          </ul>
-        </nav>  
+      <div class="row">
+        <div class="row__lg-2">
+          <div class="header__logotipo">
+              <!-- <img src="" alt="Valeo" class="logo"> -->
+              <p>Valeo Serviços</p>
+          </div>
+        </div>
+        <div class="row__lg-10">
+          <!-- Menu do topo, contém todas as páginas do site-->
+          <div class="header__top-navegation">
+            <nav class="header__top-navegation__main-nav">
+              <ul class="header__top-navegation__main-nav__menu">
+                <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Productos</a></li>
+                <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Serviços</a></li>
+                <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Clientes</a></li>
+                <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Portifólio</a></li>
+                <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">A Empresa</a></li>
+                <button class="btn btn-medium btn-white">Contacte-nos</button>
+              </ul>
+            </nav>  
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -75,7 +80,7 @@
   <section class="whoWeAre page-session">
     <div class="container">
       <div class="row">
-       <div class="row__7">
+       <div class="row__lg-7">
         <div class="whoWeAre__left-content__description">
           <p class="whoWeAre__left-content__title desktop-visibe">Quem <b>somos?</b></p>
           <p class="whoWeAre__left-content__subtitle">desde o nascimento, para responder e satisfazer aos seus
@@ -91,7 +96,7 @@
        
 
       <!-- Adicionar um Fallback, usar um poster(imagem) para navegadores que não suportam vídeos -->
-      <div class="row__5">
+      <div class="row__lg-5">
         <div class="whoWeAre__video-presentation">
             <iframe class="whoWeAre__right-content__iframe"
             src="https://www.youtube.com/embed/07o-h5StVsI" allowfullscreen>
@@ -113,14 +118,14 @@
 
 
 
-  <section class="services">
+  <section class="services page-session page-session--grey">
     <div class="container">
       <div class="services__header">
-        <p class="services__header__title"><b>Quem</b> somos?</p>
+        <p class="services__header__title"><b>O que</b> Fazemos?</p>
       </div>
       <!-- Fim do Header -->
 
-      <div class="row__6">
+      <div class="row__lg-6">
         <!-- Lista de Serviços Prestados Pela Empresa -->
         <div class="services__service">
             <!-- Icon -->
@@ -140,7 +145,7 @@
       </div>
 
 
-      <div class="row__6">
+      <div class="row__lg-6">
         <!-- Lista de Serviços Prestados Pela Empresa -->
         <div class="services__service">
           <!-- Icon -->
@@ -169,16 +174,20 @@
 
 
 
-    <section class="callUs">
+    <section class="callUs page-session">
       <div class="container">
-        <div class="row__6">
+        <div class="row__lg-6">
+          <div class="callUS__session">
             <p class="callUs__title">Falemos de <b>Negócios</b></p>
-            <p class="callUs__text">Entre em contacto por Chamada Telefónica ou por WhatsApp</p>
+            <p class="callUs__text callUs--white">Entre em contacto por Chamada Telefónica ou por WhatsApp</p>
             <p class="callUs__numbers">(+258) 84 51 000 01 / 84 51 000 01</p>
+          </div>
         </div>
-        <div class="row__6">
-          <p class="callUs__title">Peça o seu <b>orçamento</b> </p>
-          <button class="btn btn-medium">Enviar e-mail</button>
+        <div class="row__lg-6">
+          <div class="callUS__session">
+            <p class="callUs__title"><b>orçamento</b> </p>
+            <button class="btn btn-medium">Enviar e-mail</button>
+          </div>
         </div>
       </div>
     </section>

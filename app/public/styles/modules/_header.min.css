@@ -4,10 +4,6 @@
   background-color: #E12B3E;
   text-transform: uppercase;
 }
-.header__logotipo {
-  width: 30%;
-  float: left;
-}
 .header__logotipo p {
   padding-top: 20px;
   text-transform: uppercase;
@@ -15,8 +11,12 @@
   color: #fff;
 }
 .header__top-navegation {
-  width: 60%;
-  float: right;
+  display: none;
+}
+@media (min-width: 767px) {
+  .header__top-navegation {
+    display: block;
+  }
 }
 .header__top-navegation__main-nav {
   padding-top: 5px;

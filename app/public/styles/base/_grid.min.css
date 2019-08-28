@@ -1,23 +1,33 @@
 .row--gutters > div {
   padding-right: 65px;
 }
-.row__6 {
-  float: left;
-  width: 50%;
-}
-.row__4 {
-  float: left;
-  width: 33.33%;
-}
-.row__8 {
-  float: left;
-  width: 66.66%;
-}
-.row__5 {
-  float: left;
-  width: 41.66666667%;
-}
-.row__7 {
-  float: left;
-  width: 58.33333333%;
+@media (min-width: 991px) {
+  .row__lg-6 {
+    float: left;
+    width: 50%;
+  }
+  .row__lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+  .row__lg-8 {
+    float: left;
+    width: 66.66%;
+  }
+  .row__lg-5 {
+    float: left;
+    width: 41.66666667%;
+  }
+  .row__lg-7 {
+    float: left;
+    width: 58.33333333%;
+  }
+  .row__lg-2 {
+    float: left;
+    width: 16.66666667%;
+  }
+  .row__lg-10 {
+    float: left;
+    width: 83.33333333%;
+  }
 }
