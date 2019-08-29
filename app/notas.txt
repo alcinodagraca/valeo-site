@@ -23,3 +23,27 @@ Em preto em branco, não terá mais nada em especial, na Página sobre Empresa, 
             <button class="btn btn-medium">Enviar e-mail</button> 
           </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Menu do topo, contém todas as páginas do site-->
+      <div class="header__top-navegation">
+        <nav class="header__top-navegation__main-nav">
+          <ul class="header__top-navegation__main-nav__menu">
+            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Productos</a></li>
+            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Serviços</a></li>
+            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Clientes</a></li>
+            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Portifólio</a></li>
+            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">A Empresa</a></li>
+            <button class="btn btn-medium btn-white">Contacte-nos</button>
+          </ul>
+        </nav>  
+      </div>
