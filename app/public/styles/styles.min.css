@@ -668,10 +668,6 @@ img {
   border: 2px solid #19d13e;
   color: #fff;
 }
-.btn-medium {
-  width: 170px;
-  height: 50px;
-}
 .btn-bgWhite {
   background: transparent;
   border: 2px solid #E12B3E;
@@ -864,6 +860,7 @@ img {
 .callUs {
   height: 500px;
   background: linear-gradient(329deg, #b900c9 19%, #CD006F 55%, #e80000 100%);
+  padding-top: 35px;
   font-size: 0.9rem;
   line-height: 1.8;
 }
@@ -932,8 +929,79 @@ img {
 .callUs--white {
   color: #fff;
 }
+.callUs__session:first-child {
+  margin-bottom: 60px;
+}
 .testimonials {
   clear: both;
   width: 100%;
-  height: 800px;
+}
+.testimonials__box {
+  border: 1px solid #f1f1f1;
+  padding: 20px 10px;
+}
+.testimonials__header-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+@media (min-width: 991px) {
+  .testimonials__header-title {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 991px) {
+  .testimonials__header-title {
+    font-size: 2rem;
+  }
+}
+.testimonials__header-title::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: #E12B3E;
+  display: block;
+  margin-top: 20px;
+}
+@media (min-width: 991px) {
+  .testimonials__header-title::after {
+    height: 2px;
+  }
+}
+.testimonials__header-title::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: #E12B3E;
+  display: block;
+  margin-top: 20px;
+}
+@media (min-width: 991px) {
+  .testimonials__header-title::after {
+    height: 2px;
+  }
+}
+.testimonials .photo-n-name {
+  display: block;
+}
+.testimonials__photo__session {
+  float: left;
+  padding-right: 12px;
+}
+.testimonials__photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+.testimonials__data__name {
+  display: block;
+  font-weight: 500;
+  margin: 0px 0 2px 0;
+}
+.testimonials__data__profession {
+  font-size: 0.7em;
+}
+.testimonials__text {
+  padding-top: 30px;
+  font-size: 0.8rem;
 }

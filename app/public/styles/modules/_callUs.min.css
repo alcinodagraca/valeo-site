@@ -102,6 +102,7 @@ img {
 .callUs {
   height: 500px;
   background: linear-gradient(329deg, #b900c9 19%, #CD006F 55%, #e80000 100%);
+  padding-top: 35px;
   font-size: 0.9rem;
   line-height: 1.8;
 }
@@ -143,4 +144,7 @@ img {
 }
 .callUs--white {
   color: #fff;
+}
+.callUs__session:first-child {
+  margin-bottom: 60px;
 }

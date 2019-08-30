@@ -4,8 +4,41 @@
 .testimonials{
   clear: both;
   width: 100%;
-  height: 800px;
-
   
+
+  &__box{
+    border: 1px solid @grey;
+    padding: 20px 10px;
+  }
+
+  &__header-title{
+      #sessionTitle();
+      #titleDivider();
+  }
+  .photo-n-name{
+    display: block
+  }
+  &__photo__session{
+    float: left;
+    padding-right: 12px;
+  }
+  &__photo{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+  }
+  &__data__name{
+    display: block;
+    font-weight: 500;
+    margin: 0px 0 2px 0;
+  }
+  &__data__profession{
+    font-size: .7em;
+  }
+
+  &__text{
+   padding-top: 30px;
+   font-size: .8rem;
+  }
 }
 
