@@ -1,0 +1,34 @@
+@import "app/assets/styles/base/_variables.less";
+@import "app/assets/styles/base/_global.less";
+
+.top-page-session{
+  position: relative;
+  background: @bgRed;
+
+  &__header{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
+    text-align: center;
+
+    h3{
+      #sessionTitle();
+      color: @white;
+      font-weight: 400;
+      font-size: 1.5rem !important;
+    }
+    p{
+      color: @white;
+      font-size: .9rem;
+      width: 90%;
+    }
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+  }
+
+}

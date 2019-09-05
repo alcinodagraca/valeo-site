@@ -1,5 +1,17 @@
+#titles {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #E12B3E;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
 .costumers {
   background: #f1f1f1;
   height: 140px;
   overflow: hidden;
+}
+.costumers--service-page {
+  background: #fff;
+  height: 500px;
 }

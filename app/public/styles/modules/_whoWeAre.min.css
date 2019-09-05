@@ -1,3 +1,11 @@
+#titles {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #E12B3E;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
@@ -55,7 +63,7 @@
   overflow-x: hidden;
 }
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -100,6 +108,8 @@ img {
   max-width: 100%;
 }
 .whoWeAre__left-content__title {
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 200;
@@ -121,6 +131,9 @@ img {
   .whoWeAre__left-content__title::after {
     height: 2px;
   }
+}
+.whoWeAre__left-content__title--center {
+  margin: 0 auto;
 }
 .whoWeAre__left-content__subtitle {
   font-size: 1rem;
@@ -159,9 +172,20 @@ img {
 .whoWeAre__left-content__text--white {
   color: #fff;
 }
+.whoWeAre__video-presentation {
+  overflow: hidden;
+  float: right;
+  width: 100%;
+  height: 100%;
+}
 .whoWeAre__right-content__iframe {
   margin-top: 50px;
   border: none;
   width: 100%;
   height: 200px;
+}
+@media (min-width: 991px) {
+  .whoWeAre__right-content__iframe {
+    height: 400px;
+  }
 }

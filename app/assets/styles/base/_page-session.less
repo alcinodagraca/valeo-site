@@ -3,13 +3,33 @@
 @import "app/assets/styles/base/_mixins.less";
 
 .page-session{
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
   @media @desktop-up{
     padding-top: 100px;
     height: 700px;
   }
+  
   &--grey {
-    background: @grey;
+    background:@grey;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media @desktop-up{
+      padding-top: 80px;
+      height: 600px;
+    }
+  }
+
+  &--short{
+    @media @desktop-up{
+      padding-top: 45px;
+    }
+    &--margin-top{
+      @media @desktop-up{
+        padding-top: 65px;
+      }
+    }
   }
 }

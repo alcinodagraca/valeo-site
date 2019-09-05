@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
                 <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Clientes</a></li>
                 <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Portifólio</a></li>
                 <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">A Empresa</a></li>
-                <button class="btn btn-medium btn-white">Contacte-nos</button>
+                <button class="btn btn-medium">Contacte-nos</button>
               </ul>
             </nav>  
           </div>
@@ -79,10 +79,10 @@
 
   <section class="whoWeAre page-session">
     <div class="container">
-      <div class="row">
+      <div class="row row--gutters">
        <div class="row__lg-7">
         <div class="whoWeAre__left-content__description">
-          <p class="whoWeAre__left-content__title desktop-visibe">Quem <b>somos?</b></p>
+          <p class="whoWeAre__left-content__title desktop-visibe">Quem <strong>somos?</strong></p>
           <p class="whoWeAre__left-content__subtitle">desde o nascimento, para responder e satisfazer aos seus
             clientes, com imenso prazer.
           </p>
@@ -118,50 +118,73 @@
 
 
 
-  <section class="services page-session page-session--grey">
+  <section class="services page-session--grey text-content text-content--black">
     <div class="container">
       <div class="services__header">
-        <p class="services__header__title"><b>O que</b> Fazemos?</p>
+        <h3 class="services__header__title services__header--center">O que<strong> Fazemos?</strong></h3>
       </div>
       <!-- Fim do Header -->
 
-      <div class="row__lg-6">
+      <div class="row__lg-6 row--gutters">
         <!-- Lista de Serviços Prestados Pela Empresa -->
-        <div class="services__service">
-            <!-- Icon -->
-            <div class="services__service__item">
-              <i class="icon"></i>  
-              <p class="services__services__item__title">Descrição do serviço</p>
-            </div>
-
-            <!-- Description -->
-            <div class="services__service__description">
-              <p class="services__service__item__description__text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Optio ipsa dolorum cumque voluptatibus sapiente reiciendis. 
-              </p>
-            </div>
-        </div>
-      </div>
-
-
-      <div class="row__lg-6">
-        <!-- Lista de Serviços Prestados Pela Empresa -->
-        <div class="services__service">
+        <div class="services__box">
           <!-- Icon -->
-          <div class="services__service__item">
-            <i class="icon"></i>  
-            <p class="services__services__item__title">Descrição do serviço</p>
-          </div>
+          <div class="services__item">
+            <img class="services__item__icon" src="./assets/img/icons/print-icon.svg" alt=" Our printing services">  
+            <h3 class="services__item__title">Descrição do serviço</h3>
 
-          <!-- Description -->
-          <div class="services__service__description">
-            <p class="services__service__item__description__text">
+            <p class="services__item__description__text">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
               Optio ipsa dolorum cumque voluptatibus sapiente reiciendis. 
             </p>
           </div>
         </div>
+
+        <!-- Lista de Serviços Prestados Pela Empresa -->
+        <div class="services__box">
+          <!-- Icon -->
+          <div class="services__item">
+            <img class="services__item__icon" src="./assets/img/icons/print-icon.svg" alt=" Our printing services">  
+            <h3 class="services__item__title">Descrição do serviço</h3>
+
+            <p class="services__item__description__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Optio ipsa dolorum cumque voluptatibus sapiente reiciendis. 
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row__lg-6">
+        <!-- Lista de Serviços Prestados Pela Empresa -->
+        <div class="services__box">
+          <!-- Icon -->
+          <div class="services__item">
+            <img class="services__item__icon" src="./assets/img/icons/print-icon.svg" alt=" Our printing services">  
+            <h3 class="services__item__title">Descrição do serviço</h3>
+
+            <p class="services__item__description__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Optio ipsa dolorum cumque voluptatibus sapiente reiciendis. 
+            </p>
+          </div>
+        </div>
+
+        <!-- Lista de Serviços Prestados Pela Empresa -->
+        <div class="services__box">
+          <!-- Icon -->
+          <div class="services__item">
+            <img class="services__item__icon" src="./assets/img/icons/print-icon.svg" alt=" Our printing services">  
+            <h3 class="services__item__title">Descrição do serviço</h3>
+
+            <p class="services__item__description__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Optio ipsa dolorum cumque voluptatibus sapiente reiciendis. 
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -174,19 +197,20 @@
 
 
 
-    <section class="callUs page-session">
+    <section class="callUs page-session page-session--short">
       <div class="container">
-        <div class="row__lg-6">
-          <div class="callUs__session">
-            <p class="callUs__title">Falemos de <b>Negócios</b></p>
-            <p class="callUs__text callUs--white">Entre em contacto por Chamada Telefónica ou por WhatsApp</p>
-            <p class="callUs__numbers">(+258) 84 51 000 01 / 84 51 000 01</p>
+        <div class="row__lg-6 row--gutters--large">
+          <div class="callUs__session callUs__session--first-content text-content">
+            <h3 class="callUs__title">Falemos de <strong>Negócios</strong></h3>
+            <p class="callUs__text">Entre em contacto por Chamada Telefónica ou por WhatsApp</p>
+            <br>
+            <p class="callUs__numbers"><strong>(+258) 84 51 000 01 / 84 51 000 01</strong></p>
           </div>
         </div>
         <div class="row__lg-6">
           <div class="callUs__session">
-            <p class="callUs__title"><b>orçamento</b> </p>
-            <button class="btn btn-medium">Enviar e-mail</button>
+            <h3 class="callUs__title"><strong>Orçamento</strong></h3>
+            <button class="btn btn-medium btn--center">Enviar e-mail</button>
           </div>
         </div>
       </div>
@@ -195,62 +219,118 @@
     <section class="testimonials page-session">
       <div class="container">
         <div class="testimonials__header">
-          <p class="testimonials__header-title">O que dize <b>sobre nós?</b></p>
+          <p class="testimonials__header-title testimonials__header--center"><strong>Testemunhos</strong></p>
         </div>
 
-          <div class="testimonials__box">
-            <div class="photo-n-name">
-              <div class="testimonials__photo__session">
-                  <img src="./assets/img/andre-robillard-1.jpg" alt="Name da Pessoa" class="testimonials__photo">
+        <div class="row row--gutters--small">
+          <div class="row__lg-4">
+            <div class="testimonials__box">
+              <div class="testimonials__photo">
+                  <img src="./assets/img/testimonial.svg" alt="Name da Pessoa" class="testimonial-photo">
               </div>
-              <div class="testimonials__data">
-                <p class="testimonials__data__name">Alcino da Graça</p>
-                <span class="testimonials__data__profession">Valeo Serviços, Lda</span>
-              </div>
-            </div>
-            <div class="inner-box">
-                <p class="testimonials__text">Lorem ipsum dolor sit, amet consectetur 
+              <div class="testimonials__details">
+                <p class="testmonial__name">Valério Leonardo</p>
+                <h3 class="testmonial__company">Cicoti, Lda</h3>
+                <p class="testimonials__text">"Lorem ipsum dolor sit, amet consectetur 
                   adipisicing elit. ut facilis dolorem mollitia quos. 
-                  Architecto provident nisi earum praesentium dol
+                  Architecto provident nisi earum praesentium dol"
                 </p>
+              </div>
             </div>
           </div>
+          <div class="row__lg-4">
+            <div class="testimonials__box">
+              <div class="testimonials__photo">
+                  <img src="./assets/img/testimonial.svg" alt="Name da Pessoa" class="testimonial-photo">
+              </div>
+             <div class="testimonials__details">
+              <p class="testmonial__name">Valério Leonardo</p>
+              <h3 class="testmonial__company">Cicoti, Lda</h3>
+              <p class="testimonials__text">"Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. ut facilis dolorem mollitia quos. 
+                Architecto provident nisi earum praesentium dol"
+              </p>
+             </div>
+            </div>
+          </div>
+          <div class="row__lg-4">
+            <div class="testimonials__box">
+              <div class="testimonials__photo">
+                  <img src="./assets/img/testimonial.svg" alt="Name da Pessoa">
+              </div>
+              <div class="testimonials__details">
+                <p class="testmonial__name">Valério Leonardo</p>
+                <h3 class="testmonial__company">Cicoti, Lda</h3>
+                <p class="testimonials__text">"Lorem ipsum dolor sit, amet consectetur 
+                  adipisicing elit. ut facilis dolorem mollitia quos. 
+                  Architecto provident nisi earum praesentium dol"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer id="footer">
-      <div class="footer__footer-logo">
-        <img src="" alt="logo" class="footer__footer-image">
-      </div>
+    <footer class="footer page-session--grey">
+      <div class="container">
+        <div class="footer__logo">
+          <img src="" alt="logo" class="footer__footer-image">
+        </div>
 
-      <div class="footer__footer-nav">
-        <p class="menu-title">Productos</p>
-        <ul class="menu">
-          <li class="menu__menu-item">item 1</li>
-          <li class="menu__menu-item">item 2</li>
-          <li class="menu__menu-item">item 3</li>
-          <li class="menu__menu-item">item 4</li>
-          <li class="menu__menu-item">item 5</li>
-        </ul>
 
-        <p class="menu-title">Productos</p>
-        <ul class="menu">
-          <li class="menu__menu-item">item 1</li>
-          <li class="menu__menu-item">item 2</li>
-          <li class="menu__menu-item">item 3</li>
-          <li class="menu__menu-item">item 4</li>
-          <li class="menu__menu-item">item 5</li>
-        </ul>
+        <div class="row">
+          <div class="row__lg-4">
+            <h3 class="footer__menu-title">Serviços</h3>
+            <ul class="footer__menu">
+              <li class="footer__menu-item"><a href="">Linha Industrial | Offset</a></li>
+              <li class="footer__menu-item">Impressão Digital</li>
+              <li class="footer__menu-item">Impressão Digial Ploter</li>
+              <li class="footer__menu-item">Impressão Digial Laser</li>
+              <li class="footer__menu-item">Birô de Impressão</li>
+              <li class="footer__menu-item">Serigarfia e Bordado</li>
+              <li class="footer__menu-item">Tampografia</li>
+            </ul>
+          </div>
+          <div class="row__lg-4">
+            <h3 class="footer__menu-title">A Empresa</h3>
 
-        <p class="menu-title">Productos</p>
-        <ul class="menu">
-          <li class="menu__menu-item">item 1</li>
-          <li class="menu__menu-item">item 2</li>
-          <li class="menu__menu-item">item 3</li>
-          <li class="menu__menu-item">item 4</li>
-          <li class="menu__menu-item">item 5</li>
-        </ul>
+            <h4 class="footer__menu-subtitle">Horário de Trabalho</h4>
+            <ul class="footer__menu">
+              <li class="footer__menu-item footer__menu-item--lh-small gap"><strong>Segunda-feira - Sexta-feira:</strong></li>
+              <li class="footer__menu-item footer__menu-item--lh-small">08h:00 - 17h:00m</li>
+              <li class="footer__menu-item footer__menu-item--lh-small gap"><strong>Sábados - Feriados</strong></li>
+              <li class="footer__menu-item footer__menu-item--lh-small">Fechado</li>
+            </ul>
+
+            <h4 class="footer__menu-subtitle">Endereço</h4>
+            <p class="footer__menu-item footer__menu-item--lh-small">Rua Travessia da Tanzânia, nº 23
+              Alto - Maé - Maputo.
+            </p>
+            <p class="footer__menu-item footer__menu-item--lh-small">CP nº 1823</p>
+
+            <h4 class="footer__menu-subtitle">Telefone</h4>
+            <p class="footer__menu-item footer__menu-item--lh-small">Cell: (+258) 84 056 2558</p>
+            <p class="footer__menu-item footer__menu-item--lh-small">Cell: (+258) 84 056 2558</p>
+
+            <h4 class="footer__menu-subtitle">Email</h4>
+            <p class="footer__menu-item footer__menu-item--lh-small">valeo@valeoservicos.com</p>
+
+          </div>
+          <div class="row__lg-4">
+            <ul class="menu">
+              <li class="menu__menu-item">item 1</li>
+              <li class="menu__menu-item">item 2</li>
+              <li class="menu__menu-item">item 3</li>
+              <li class="menu__menu-item">item 4</li>
+              <li class="menu__menu-item">item 5</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
+    <div class="copyright">
+      <small>&copy; 2019 - Design & Desenvolvimento por <a href="">Valeo Serviços</a></small>
+    </div>
 </body>
 </html>

@@ -1,42 +1,86 @@
 @import "app/assets/styles/base/_variables.less";
 @import "app/assets/styles/base/_global.less";
+@import "app/assets/styles/base/_mixins.less";
+
 
 .services{
+  // margin: 0;
+  // padding: 0;
+  overflow: hidden;
+
+  &__box{
+    margin-bottom: 50px;
+    &:last-child{
+      margin: 0;
+    }
+
+    @media @tablet-up{
+      margin-bottom: 100px;
+    }
+
+    &--margin-bottom{
+      @media @tablet-up{
+       padding-bottom: 80px; 
+      }
+    }
+  }
   
   &__header__title{
     #sessionTitle();
-    #titleDivider();
+    #titleDivider--center();
+    margin-bottom: 3rem;
+  }
+
+  &__header__subtitle{
+    margin: -20px auto 70px auto;
+    color: @black;
+  }
+
+  &__header--center{
+    text-align: center;
   }
 
   //Services
-  &__services__item{
-    float: left;
-    width: 100%;
+  &__item{
 
-
-    &__icon__box__i{
-      float: left;
-      width: 120px;
-      height: 120px;
-      background: @black;
-      margin-right: 20px;
+    @media @tablet-up{
+      position: relative;
+      padding-left: 105px;
     }
-  
-    &__description__the-service__title{
-      display: block;
-      text-transform: uppercase;
-    }
+    
+    
 
-    &__description__the-service-the-desc{
-      width: 460px;
+    &__icon{
+      #icons();
+
+      @media @tablet-up{
+        position: absolute;
+        left: 0;
+        width: 80px;
+      }
+    }
+    &__icons{
+      #icons();
+      width: 80px;
     }
   }
 
-  &__btn{
-    margin: 0 auto;
+  &__item__title{
+    #titles();
+
+    @media @tablet-up{
+      text-align: start;
+    }
+  }
+
+  &__item__titles{
+    #titles();
   }
 }
+.otherServices{
+  background: @grey;
 
+}
 
 
 

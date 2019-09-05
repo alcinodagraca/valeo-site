@@ -1,0 +1,52 @@
+@import "app/assets/styles/base/_variables.less";
+@import "app/assets/styles/base/_mixins.less";
+
+.footer{
+
+  &__logo{
+    img{
+      content: "LOGO";
+    }
+  }
+
+  &__menu-title{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+
+  &__menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__menu-item{
+    width: 65%;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: 300;
+    line-height: 2.3;
+    font-size: .9rem;
+    color: @black;
+
+    a{
+      text-decoration: none;
+    }
+  }
+
+  &__menu-item--lh-small{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5 !important;
+  }
+
+  &__menu-subtitle{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: 0;
+    margin: 1.5rem 0 .5rem 0;
+  }
+}

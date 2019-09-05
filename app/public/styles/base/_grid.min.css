@@ -1,10 +1,22 @@
-.row--gutters > div {
-  padding-right: 65px;
+@media (min-width: 991px) {
+  .row--gutters > div {
+    padding-right: 65px;
+  }
+  .row--gutters--small > div {
+    padding-right: 40px;
+  }
+  .row--gutters--large > div {
+    padding-right: 90px;
+  }
 }
 @media (min-width: 991px) {
   .row__lg-6 {
     float: left;
     width: 50%;
+  }
+  .row__lg-3 {
+    float: left;
+    width: 25%;
   }
   .row__lg-4 {
     float: left;

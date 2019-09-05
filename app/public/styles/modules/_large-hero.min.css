@@ -1,3 +1,11 @@
+#titles {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #E12B3E;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
@@ -55,7 +63,7 @@
   overflow-x: hidden;
 }
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -113,8 +121,8 @@ img {
 .large-hero__description {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-60%);
-  transform: translateY(-60%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 100%;
 }
 @media (min-width: 991px) {
@@ -125,18 +133,28 @@ img {
   }
 }
 .large-hero__description__intro {
+  display: block;
   text-transform: uppercase;
   font-size: 1rem;
   color: #fff;
   font-weight: 400;
+  padding: 10px 0;
+}
+@media (min-width: 991px) {
+  .large-hero__description__intro {
+    margin-bottom: 0px;
+  }
 }
 .large-hero__description__company-text {
-  width: 95%;
+  display: block;
+  padding: 0 0 15px 0;
+  width: 94%;
   font-size: 1rem;
   font-weight: 300;
   color: #fff;
   letter-spacing: 2.5px;
   line-height: 1.7;
+  text-align: start;
 }
 @media (min-width: 991px) {
   .large-hero__description__company-text {
@@ -145,9 +163,12 @@ img {
   }
 }
 .large-hero__description__company-text a {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #19d13e;
-  text-decoration-color: #19d13e;
-  font-size: 1.2rem;
-  font-weight: 400;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+@media (min-width: 991px) {
+  .large-hero__description__company-text a {
+    font-size: 1.4rem;
+  }
 }

@@ -2,25 +2,50 @@
 @import "app/assets/styles/base/_global.less";
 
 .callUs{
-  height: 500px;
+  height: 450px;
   background: @bgRed;
-  padding-top: 35px;
+
+  @media @desktop-up{
+    height: 260px;
+  }
 
   &__title{
     #sessionTitle();
     color: @white;
+    margin-bottom: 1rem;
 
-    #titleDivider();
+    #titleDivider--center();
     &::after{
       background: @white;
     }
+    @media @desktop-up{
+      #titleDivider();
+      &::after{
+        background: @white;
+        margin-left: 0;
+      }
+    }
   }
-  &__numbers, b{
-    color: @white;
+  &__session--first-content{
+    #hr();  
+    &::after {
+      margin: 40px auto;
+    }
+    @media @desktop-up{
+    &::after {
+      display: none;
+      }
+    }
   }
-  #text();
-
-  &__session:first-child{
-    margin-bottom: 60px;
+  p, h3{
+    text-align: center;
+    text-transform: uppercase;
+    @media @desktop-up{
+      text-align: start;
+    }
+  }
+  &__numbers{
+    display: block;
+    margin: 10px;;
   }
 }

@@ -12,7 +12,7 @@
   overflow-x: hidden;
 }
 body{
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   background: transparent;
@@ -26,6 +26,8 @@ p, h1, h2, h3, span, b{
 }
 
 #sessionTitle(){
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 200;
@@ -43,6 +45,26 @@ p, h1, h2, h3, span, b{
     background: @divider;
     display: block;
     margin-top: 20px;
+
+    @media @desktop-up{
+      height: 2px;
+    }
+  }
+  &--center{
+    margin: 0 auto;
+  }
+}
+
+#titleDivider--center(){
+  &::after{
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: @divider;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media @desktop-up{
       height: 2px;

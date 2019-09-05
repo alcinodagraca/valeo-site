@@ -1,15 +1,28 @@
 @import "app/assets/styles/base/_mixins.less";
 .row{
+  @media @desktop-up{
+    &--gutters > div{
+      padding-right: 65px;
+    }
 
-  &--gutters > div{
-    padding-right: 65px;
+    &--gutters--small > div{
+      padding-right: 40px;
+    }
+    &--gutters--large > div{
+      padding-right: 90px;
+    }
   }
+
   @media @desktop-up{
     &__lg-6{
       float: left;
       width: 50%;
     }
-  
+    &__lg-3 {
+      float: left;
+      width: 25%;
+    }
+
     &__lg-4{
       float: left;
       width: 33.33%

@@ -1,3 +1,11 @@
+#titles {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #E12B3E;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
@@ -55,7 +63,7 @@
   overflow-x: hidden;
 }
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -100,17 +108,22 @@ img {
   max-width: 100%;
 }
 .callUs {
-  height: 500px;
+  height: 450px;
   background: linear-gradient(329deg, #b900c9 19%, #CD006F 55%, #e80000 100%);
-  padding-top: 35px;
-  font-size: 0.9rem;
-  line-height: 1.8;
+}
+@media (min-width: 991px) {
+  .callUs {
+    height: 260px;
+  }
 }
 .callUs__title {
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 200;
   color: #fff;
+  margin-bottom: 1rem;
 }
 @media (min-width: 991px) {
   .callUs__title {
@@ -124,6 +137,8 @@ img {
   background: #E12B3E;
   display: block;
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 991px) {
   .callUs__title::after {
@@ -133,18 +148,63 @@ img {
 .callUs__title::after {
   background: #fff;
 }
-.callUs__numbers,
-.callUs b {
-  color: #fff;
-}
 @media (min-width: 991px) {
-  .callUs {
-    font-size: 1.125rem;
+  .callUs__title::after {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: #E12B3E;
+    display: block;
+    margin-top: 20px;
+  }
+  .callUs__title--center {
+    margin: 0 auto;
+  }
+  .callUs__title::after {
+    background: #fff;
+    margin-left: 0;
   }
 }
-.callUs--white {
-  color: #fff;
+@media (min-width: 991px) and (min-width: 991px) {
+  .callUs__title::after {
+    height: 2px;
+  }
 }
-.callUs__session:first-child {
-  margin-bottom: 60px;
+.callUs__session--first-content::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #f1f1f1;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (min-width: 991px) {
+  .callUs__session--first-content::after {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+.callUs__session--first-content::after {
+  margin: 40px auto;
+}
+@media (min-width: 991px) {
+  .callUs__session--first-content::after {
+    display: none;
+  }
+}
+.callUs p,
+.callUs h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 991px) {
+  .callUs p,
+  .callUs h3 {
+    text-align: start;
+  }
+}
+.callUs__numbers {
+  display: block;
+  margin: 10px;
 }

@@ -1,14 +1,22 @@
+#titles {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #E12B3E;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
 .header {
   height: 90px;
   width: 100%;
-  background-color: #E12B3E;
+  background-color: #fff;
   text-transform: uppercase;
 }
 .header__logotipo p {
   padding-top: 20px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #fff;
+  color: #E12B3E;
 }
 .header__top-navegation {
   display: none;
@@ -33,5 +41,5 @@
 }
 .header__top-navegation__main-nav__menu__menu-item a {
   text-decoration: none;
-  color: #fff;
+  color: #071e3c;
 }
