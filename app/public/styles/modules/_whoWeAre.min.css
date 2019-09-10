@@ -60,10 +60,9 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  overflow-x: hidden;
+  overflow: auto;
 }
 body {
-  overflow: hidden;
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -131,9 +130,6 @@ img {
   .whoWeAre__left-content__title::after {
     height: 2px;
   }
-}
-.whoWeAre__left-content__title--center {
-  margin: 0 auto;
 }
 .whoWeAre__left-content__subtitle {
   font-size: 1rem;

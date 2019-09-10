@@ -1,116 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./public/styles/styles.min.css">
+  <link rel="stylesheet" href="./../public/styles/styles.min.css">
   <title>Valeo</title>
 </head>
 <body>
-  <header id="header">
-    <div id="header__top-navegation">
-        <nav id="header__main-nav">
-          <ul id="menu">
-            <li class="menu__item"><a href="">Productos</a></li>
-            <li class="menu__item"><a href="">Serviços</a></li>
-            <li class="menu__item"><a href="">Clientes</a></li>
-            <li class="menu__item"><a href="">Portifólio</a></li>
-            <li class="menu__item"><a href="">A Empresa</a></li>
-            <button class="menu__btn btn">Contacte-nos</button>
-          </ul>
-        </nav>  
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="row__lg-2">
+          <div class="header__logotipo">
+              <!-- <img src="" alt="Valeo" class="logo"> -->
+              <p>Valeo Serviços</p>
+          </div>
+        </div>
+        <div class="row__lg-10">
+          <!-- Menu do topo, contém todas as páginas do site-->
+          <div class="primary-nav">
+
+            <div class="primary-nav__menu-icon"></div>
+
+            <nav class="primary-nav__main-nav">
+              <ul class="primary-nav__main-nav__menu">
+                <li class="primary-nav__main-nav__menu__menu-item"><a href="">Productos</a></li>
+                <li class="primary-nav__main-nav__menu__menu-item"><a href="">Serviços</a></li>
+                <li class="primary-nav__main-nav__menu__menu-item"><a href="">Clientes</a></li>
+                <li class="primary-nav__main-nav__menu__menu-item"><a href="">Portifólio</a></li>
+                <li class="primary-nav__main-nav__menu__menu-item"><a href="">A Empresa</a></li>
+                <button class="primary-nav__btn btn btn-medium">Contacte-nos</button>
+              </ul>
+            </nav>  
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
-  <div class="sub-header">
-    <img src="" alt="" class="sub-header-image">
-    <p>A Empresa</p>
+  </header> 
+
+  <div class="top-page-session">
+      <img src="./../assets/img/bg-up.svg" alt="" class="sub-header-image">
+      <div class="top-page-session__header">
+        <h3>Os nossos serviços</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eum quo praesentium sequi voluptatum omni</p>
+      </div>
   </div>
 
-  <section id="whoWeAre11">
-    <div>
-        <p class="whoWeAre__title"><b>Quem</b> somos?</p>
-        <div class="divider"></div>
-        <p class="whoWeAre__subtitle">desde o nascimento, para responder e satisfazer aos seus
-          clientes, com imenso prazer.
-        </p>
-        <p class="whoWeAre__text">A Valeo Serviços, esta no mercado desde 2003, todo este tempo, tem dedicado
-            muito profissionalismo, seriedade e qualidade que permita oferecer soluções
-            integradas, no trato e garantia de serviços ao cliente.
-            
-            A Valeo Serviços, desde o nascimento, para responder e satisfazer aos seus
-            Clientes, com imenso prazer tem vindo a crescer na incorporação de diferentes
-            serviços. 
-          </p>
-    </div>
 
-    <div>
-      <p>
-          <p>Missão</p> 
-          <div class="divider"></div>
-          <p>Garantir a criação de valor para clientes, colaboradores e a sociedade em geral em todas as áreas de negócio, desenvolvendo produtos e 
-            prestando serviços de elevada qualidade, tendo por base os valores de competência, cooperação, ética, rigor e solidez e respeitando os padrões
-            de crescimento sustentável que caracterizam o Grupo ValeoServiços.
-          </p>
-          
-          <p>Visão</p>
-          <div class="divider"></div> 
-          <p>
-            Ser uma empresa inovadora, diferenciada, comprometida com o atendimento
-            e a qualidade dos serviços, desenvolvendo programas sócio-ambientais, sendo
-            referência no segmento ao grupo de serviços de elevada qualidade que caracterizam o Grupo ValeoServiços, contribuindo para o progresso económico do país.
-          </p>  
-          
-          <p>Valores:</p>
-          <div class="divider"></div> 
-          <p>
-            Compromisso com a qualidade e busca por soluções criativas para nossos clientes;
-            Ser uma empresa por Excelência
-            Integridade e parceria
-            Valorização das pessoas, estimulandoo crescimento pessoal e qualidade de vida.
-            Ambiente participativo
-            Transparência de gestão
-            Ética e Respeito.
-          </p> 
-      </p>
+  <div class="about page-session--sub-page">
+      <div class="container">
+          <div class="row">
+              <div class="row__lg-6">
+                  <div class="about__left-content about__border-right whoWeAre__left-content__description">
+                      <p class="about whoWeAre__left-content__title desktop-visibe">Quem <strong>somos?</strong></p>
+                      <p class="about whoWeAre__left-content__subtitle">desde o nascimento, para responder e satisfazer aos seus
+                        clientes, com imenso prazer.
+                      </p>
+                      <p class="about whoWeAre__left-content__text">A Valeo Serviços, esta no mercado desde 2003, todo este tempo, tem dedicado
+                          muito profissionalismo, seriedade e qualidade que permita oferecer soluções
+                          integradas, no trato e garantia de serviços ao cliente. 
+                      </p>
+                  </div>
+                  </div>
+                  <div class="row__lg-6">
+                    <div class="about__right-content text-content">
+                        <div class="missao">
+                            <h3 class="about__title">Missão</h3> 
+                            <p class="about__text">Garantir a criação de valor para clientes, colaboradores e a sociedade em geral em todas as áreas de negócio, desenvolvendo produtos e 
+                              prestando serviços de elevada qualidade, tendo por base os valores de competência, cooperação, ética, rigor e solidez e respeitando os padrões
+                              de crescimento sustentável que caracterizam o Grupo ValeoServiços.
+                            </p>
+                          </div>
+                          
+                          <div class="visao">
+                            <h3 class="about__title">Visão</h3>
+                            <p class="about__text">
+                              Ser uma empresa inovadora, diferenciada, comprometida com o atendimento
+                              e a qualidade dos serviços, desenvolvendo programas sócio-ambientais, sendo
+                              referência no segmento ao grupo de serviços de elevada qualidade que caracterizam o Grupo ValeoServiços, contribuindo para o progresso económico do país.
+                            </p>  
+                          </div>
+      
+                          <div class="valores">
+                            <h3 class="about__title">Valores</h3>
+                            <p class="about__text">
+                              Compromisso com a qualidade e busca por soluções criativas para nossos clientes;
+                              Ser uma empresa por Excelência
+                              Integridade e parceria
+                              Valorização das pessoas, estimulandoo crescimento pessoal e qualidade de vida.
+                              Ambiente participativo
+                              Transparência de gestão
+                              Ética e Respeito.
+                            </p> 
+                          </div>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      
+  </div>
+  
+
+
+  <section class="parceiros">
+    <!-- Content Inside -->
+  </section>
+
+  <section class="about__iframe">
+      <button class="btn about__btn btn-white btn-medium">Assista!</button>
+    <div class="about__video-presentation">
+        <iframe class="iframe"
+        src="https://www.youtube.com/embed/07o-h5StVsI" allowfullscreen>
+        </iframe>
     </div>
   </section>
 
-  <section id="slides">
-    <div class="box">
-        <img src="" alt="" class="bg">
-        <div>
-          <p>mais de 25 trabalhadores</p>
-          <div class="divider"></div>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt optio ex, natus quo odit libero saepe.
-             Consequuntur enim numquam rerum atque pariatur dolor ut. Magni modi quam dolor ratione fugiat?
-            </p>
-        </div>
-    </div>
+  <section class="costumers">
+      <div class="container">
+        <span class="costumers__item">cliente 1</span>
+        <span class="costumers__item">cliente 2</span>
+        <span class="costumers__item">cliente 3</span>
+        <span class="costumers__item">cliente 4</span>
+        <span class="costumers__item">cliente 5</span>
+        <span class="costumers__item">cliente 6</span>
+        <span class="costumers__item">cliente 7</span>
+        <span class="costumers__item">cliente 8</span>
+        <span class="costumers__item">cliente 9</span>
+        <span class="costumers__item">cliente 10</span>
+      </div>
+    </section>
 
-    <div class="box">
-        <img src="" alt="" class="bg">
-        <div>
-          <p>mais de 25 trabalhadores</p>
-          <div class="divider"></div>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt optio ex, natus quo odit libero saepe.
-             Consequuntur enim numquam rerum atque pariatur dolor ut. Magni modi quam dolor ratione fugiat?
-            </p>
-        </div>
-    </div>
 
-    <div class="box">
-        <img src="" alt="" class="bg">
-        <div>
-          <p>mais de 25 trabalhadores</p>
-          <div class="divider"></div>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt optio ex, natus quo odit libero saepe.
-             Consequuntur enim numquam rerum atque pariatur dolor ut. Magni modi quam dolor ratione fugiat?
-            </p>
-        </div>
-    </div>
 
-  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <section id="callab">
       <p class="whoWeAre__title"><b>Quem</b> somos?</p>
@@ -149,41 +192,65 @@
       <span class="costumers__item">cliente 9</span>
       <span class="costumers__item">cliente 10</span>
   </section>
-  <footer id="footer">
-      <div class="footer__footer-logo">
+
+
+  <footer class="footer page-session--grey">
+    <div class="container">
+      <div class="footer__logo">
         <img src="" alt="logo" class="footer__footer-image">
       </div>
 
-      <div class="footer__footer-nav">
-        <p class="menu-title">Productos</p>
-        <ul class="menu">
-          <li class="menu__menu-item">item 1</li>
-          <li class="menu__menu-item">item 2</li>
-          <li class="menu__menu-item">item 3</li>
-          <li class="menu__menu-item">item 4</li>
-          <li class="menu__menu-item">item 5</li>
-        </ul>
 
-        <p class="menu-title">Productos</p>
-        <ul class="menu">
-          <li class="menu__menu-item">item 1</li>
-          <li class="menu__menu-item">item 2</li>
-          <li class="menu__menu-item">item 3</li>
-          <li class="menu__menu-item">item 4</li>
-          <li class="menu__menu-item">item 5</li>
-        </ul>
+      <div class="row">
+        <div class="row__lg-4">
+          <h3 class="footer__menu-title">Serviços</h3>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="">Linha Industrial | Offset</a></li>
+            <li class="footer__menu-item">Impressão Digital</li>
+            <li class="footer__menu-item">Impressão Digial Ploter</li>
+            <li class="footer__menu-item">Impressão Digial Laser</li>
+            <li class="footer__menu-item">Birô de Impressão</li>
+            <li class="footer__menu-item">Serigarfia e Bordado</li>
+            <li class="footer__menu-item">Tampografia</li>
+          </ul>
+        </div>
+        <div class="row__lg-4">
+          <h3 class="footer__menu-title">A Empresa</h3>
 
-        <p class="menu-title">Productos</p>
-        <ul class="menu">
-          <li class="menu__menu-item">item 1</li>
-          <li class="menu__menu-item">item 2</li>
-          <li class="menu__menu-item">item 3</li>
-          <li class="menu__menu-item">item 4</li>
-          <li class="menu__menu-item">item 5</li>
-        </ul>
+          <h4 class="footer__menu-subtitle">Horário de Trabalho</h4>
+          <ul class="footer__menu">
+            <li class="footer__menu-item footer__menu-item--lh-small gap"><strong>Segunda-feira - Sexta-feira:</strong></li>
+            <li class="footer__menu-item footer__menu-item--lh-small">08h:00 - 17h:00m</li>
+            <li class="footer__menu-item footer__menu-item--lh-small gap"><strong>Sábados - Feriados</strong></li>
+            <li class="footer__menu-item footer__menu-item--lh-small">Fechado</li>
+          </ul>
+
+          <h4 class="footer__menu-subtitle">Endereço</h4>
+          <p class="footer__menu-item footer__menu-item--lh-small">Rua Travessia da Tanzânia, nº 23
+            Alto - Maé - Maputo.
+          </p>
+          <p class="footer__menu-item footer__menu-item--lh-small">CP nº 1823</p>
+
+          <h4 class="footer__menu-subtitle">Telefone</h4>
+          <p class="footer__menu-item footer__menu-item--lh-small">Cell: (+258) 84 056 2558</p>
+          <p class="footer__menu-item footer__menu-item--lh-small">Cell: (+258) 84 056 2558</p>
+
+          <h4 class="footer__menu-subtitle">Email</h4>
+          <p class="footer__menu-item footer__menu-item--lh-small">valeo@valeoservicos.com</p>
+
+        </div>
+        <div class="row__lg-4">
+          <h3 class="footer__menu-title">Siga-nos</h3>
+          <ul class="footer__menu">
+            <li class="footer__menu-item footer__menu-item--lh-small gap">facebook</li>
+            <li class="footer__menu-item footer__menu-item--lh-small gap">instagram</li>
+          </ul>
+        </div>
       </div>
+    </div>
   </footer>
-</html>
+  <div class="footer__copyright">
+    <small>&copy; 2019 - Design & Desenvolvimento por <a href="">Valeo Serviços</a></small>
+  </div>
 </body>
-
-                                                                                                                                                                                                                    
+</html>

@@ -60,10 +60,9 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  overflow-x: hidden;
+  overflow: auto;
 }
 body {
-  overflow: hidden;
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -109,11 +108,11 @@ img {
 }
 .page-session {
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 @media (min-width: 991px) {
   .page-session {
     padding-top: 100px;
+    padding-bottom: 100px;
     height: 700px;
   }
 }
@@ -126,6 +125,12 @@ img {
   .page-session--grey {
     padding-top: 80px;
     height: 600px;
+  }
+}
+@media (min-width: 991px) {
+  .page-session--sub-page {
+    padding-top: 80px;
+    height: 850px;
   }
 }
 @media (min-width: 991px) {

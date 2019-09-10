@@ -9,10 +9,10 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  overflow-x: hidden;
+  overflow: auto;
 }
 body{
-  overflow: hidden;
+  // overflow: hidden;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   background: transparent;
@@ -50,10 +50,23 @@ p, h1, h2, h3, span, b{
       height: 2px;
     }
   }
-  &--center{
-    margin: 0 auto;
+}
+
+#titleDivider--small(){
+  &::after{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: @divider;
+    display: block;
+    margin-top: 10px;
+
+    @media @desktop-up{
+      height: 2px;
+    }
   }
 }
+
 
 #titleDivider--center(){
   &::after{

@@ -1,0 +1,49 @@
+@import "app/assets/styles/base/_variables.less";
+@import "app/assets/styles/base/_mixins.less";
+
+.primary-nav{
+  @media @tablet-up{
+    display: block;
+  } 
+  &__main-nav{
+    padding-top: 5px;
+    float: right;
+
+    &__menu{
+      margin: 0;
+      padding: 0;
+      
+      &__menu-item{
+        float: left;
+        padding-right: 20px;
+        list-style: none;
+        line-height: 90px;
+        
+        a{
+          text-decoration: none;
+          color: @black;
+          font-weight: 500;
+          font-size: 0.8125rem;
+        }
+      }
+      
+    }
+  }
+  &__btn{
+    margin-top: 20px;
+  }
+
+  &__menu-icon{
+    width: 30px;
+    height: 30px;
+    background-color: @black;
+    position: absolute;
+    top: 45px;
+    transform: translateY(-45%);
+    right: 10px;
+
+    @media @desktop-up{
+      display: none;
+    }
+  }
+}

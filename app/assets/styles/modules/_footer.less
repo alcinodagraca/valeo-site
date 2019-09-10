@@ -1,10 +1,14 @@
 @import "app/assets/styles/base/_variables.less";
 @import "app/assets/styles/base/_mixins.less";
+@import "app/assets/styles/base/_global.less";
 
 .footer{
+  clear: both;
+  overflow: hidden;
 
   &__logo{
-    img{
+    display: none;
+    img::after{
       content: "LOGO";
     }
   }
@@ -13,6 +17,7 @@
     font-weight: 400;
     text-transform: uppercase;
     font-size: 1rem;
+    #titleDivider--small();
   }
 
   &__menu{
@@ -48,5 +53,26 @@
     font-size: .8rem;
     padding: 0;
     margin: 1.5rem 0 .5rem 0;
+  }
+  &__copyright{
+    background-color: @black;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 5px;
+
+    @media @desktop-up{
+      padding-top: 15px;
+    }
+
+    small{
+      color: @white;
+      text-transform: uppercase;
+
+      a{
+        color: @divider;
+        text-decoration: none;
+      }
+    }
   }
 }

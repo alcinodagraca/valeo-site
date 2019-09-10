@@ -18,28 +18,3 @@
   font-weight: 500;
   color: #E12B3E;
 }
-.header__top-navegation {
-  display: none;
-}
-@media (min-width: 767px) {
-  .header__top-navegation {
-    display: block;
-  }
-}
-.header__top-navegation__main-nav {
-  padding-top: 5px;
-  float: right;
-}
-.header__top-navegation__main-nav__menu {
-  list-style: none;
-}
-.header__top-navegation__main-nav__menu__menu-item {
-  display: inline;
-  margin-right: 20px;
-  font-weight: 500;
-  font-size: 0.8125rem;
-}
-.header__top-navegation__main-nav__menu__menu-item a {
-  text-decoration: none;
-  color: #071e3c;
-}

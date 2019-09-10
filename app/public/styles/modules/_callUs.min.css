@@ -60,10 +60,9 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  overflow-x: hidden;
+  overflow: auto;
 }
 body {
-  overflow: hidden;
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -108,8 +107,13 @@ img {
   max-width: 100%;
 }
 .callUs {
-  height: 450px;
+  height: 500px;
   background: linear-gradient(329deg, #b900c9 19%, #CD006F 55%, #e80000 100%);
+}
+@media (min-width: 480px) {
+  .callUs {
+    height: 450px;
+  }
 }
 @media (min-width: 991px) {
   .callUs {
@@ -156,9 +160,6 @@ img {
     background: #E12B3E;
     display: block;
     margin-top: 20px;
-  }
-  .callUs__title--center {
-    margin: 0 auto;
   }
   .callUs__title::after {
     background: #fff;

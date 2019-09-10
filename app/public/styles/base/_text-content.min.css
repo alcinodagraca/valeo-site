@@ -19,6 +19,9 @@
     text-align: start;
   }
 }
+.text-content--black {
+  color: #071e3c !important;
+}
 .text-content--black p {
-  color: #071e3c;
+  color: #071e3c !important;
 }

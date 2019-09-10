@@ -2,8 +2,12 @@
 @import "app/assets/styles/base/_global.less";
 
 .callUs{
-  height: 450px;
+  height: 500px;
   background: @bgRed;
+
+  @media @phone-up{
+    height: 450px;
+  }
 
   @media @desktop-up{
     height: 260px;
