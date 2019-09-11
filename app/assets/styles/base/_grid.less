@@ -1,4 +1,5 @@
 @import "app/assets/styles/base/_mixins.less";
+@import "app/assets/styles/base/_global.less";
 .row{
   @media @desktop-up{
     &--gutters > div{
@@ -17,15 +18,18 @@
     &__lg-6{
       float: left;
       width: 50%;
+      #clearFix();
     }
     &__lg-3 {
       float: left;
       width: 25%;
+      #clearFix();
     }
 
     &__lg-4{
       float: left;
-      width: 33.33%
+      width: 33.33%;
+      #clearFix();
     }
   
     &__lg-8{

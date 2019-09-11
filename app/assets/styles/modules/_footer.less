@@ -3,8 +3,8 @@
 @import "app/assets/styles/base/_global.less";
 
 .footer{
-  clear: both;
-  overflow: hidden;
+  #clearFix();
+  width: 100%;
 
   &__logo{
     display: none;
@@ -54,7 +54,11 @@
     padding: 0;
     margin: 1.5rem 0 .5rem 0;
   }
+
+
+
   &__copyright{
+    #clearFix();
     background-color: @black;
     width: 100%;
     height: 50px;

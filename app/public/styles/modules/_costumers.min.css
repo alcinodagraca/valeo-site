@@ -1,1 +1,1 @@
-#titles{text-transform:uppercase;font-weight:400;color:#e12b3e;font-size:1rem;margin-bottom:.8rem;text-align:center}.costumers{background:#f1f1f1;height:140px;overflow:hidden}.costumers--service-page{background:#fff;height:500px}
+#titles{text-transform:uppercase;font-weight:400;color:#e12b3e;font-size:1rem;margin-bottom:.8rem;text-align:center}.costumers{background:#f1f1f1;height:140px;overflow-y:hidden;clear:both;display:block;width:100%}.costumers--service-page{background:#fff;height:500px}

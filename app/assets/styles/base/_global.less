@@ -9,7 +9,7 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  overflow: auto;
+
 
   @media @desktop-up{
     padding: 0 8px;
@@ -17,23 +17,29 @@
   }
 }
 body{
-  // overflow: hidden;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   background: transparent;
+  overflow: auto;
 }
 * {
   box-sizing: border-box;
-  overflow: visible;
 }
 p, h1, h2, h3, span, b{
   color: @black;
+}
+#clearFix(){
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }
 
 #sessionTitle(){
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.5rem;
   font-weight: 200;
 

@@ -2,18 +2,26 @@
 @import "app/assets/styles/base/_mixins.less";
 
 .header{
-  height: 90px;
+  height: 70px;
 	width: 100%;
   background-color: @white;
-  text-transform: uppercase;
+  overflow: hidden;
+
+  @media @desktop-up{
+    height: 90px;
+  }
   
   &__logotipo{
 
     & p{
-      padding-top: 20px;
+      margin-top: 10px;
       text-transform: uppercase;
       font-weight: 500;
       color: @divider;
+
+       @media @desktop-up{
+        margin-top: 20px;
+      }
     }
   }
 
