@@ -20,19 +20,21 @@
         <div class="row__lg-10">
           <!-- Menu do topo, contém todas as páginas do site-->
           <div class="primary-nav">
-
-            <div class="primary-nav__menu-icon"></div>
-
-            <nav class="primary-nav__main-nav">
-              <ul class="primary-nav__main-nav__menu">
-                <li class="primary-nav__main-nav__menu__menu-item"><a href="">Productos</a></li>
-                <li class="primary-nav__main-nav__menu__menu-item"><a href="">Serviços</a></li>
-                <li class="primary-nav__main-nav__menu__menu-item"><a href="">Clientes</a></li>
-                <li class="primary-nav__main-nav__menu__menu-item"><a href="">Portifólio</a></li>
-                <li class="primary-nav__main-nav__menu__menu-item"><a href="">A Empresa</a></li>
-                <button class="primary-nav__btn btn btn-medium">Contacte-nos</button>
+            <nav class="primary-nav__main-nav nav">
+              <ul class="primary-nav__menu nav-links">
+                <li class="primary-nav__menu-item"><a href="">Productos</a></li>
+                <li class="primary-nav__menu-item"><a href="">Serviços</a></li>
+                <li class="primary-nav__menu-item"><a href="">Clientes</a></li>
+                <li class="primary-nav__menu-item"><a href="">Portifólio</a></li>
+                <li class="primary-nav__menu-item"><a href="">A Empresa</a></li>
+                <li class="primary-nav__menu-item"><button class="primary-nav__btn btn btn-medium">Contacte-nos</button></li>
               </ul>
             </nav>  
+            <div class="primary-nav__hamburguer-menu burger">
+              <div class="primary-nav__hamburguer-menu__icon icon-1"></div>
+              <div class="primary-nav__hamburguer-menu__icon icon-2"></div>
+              <div class="primary-nav__hamburguer-menu__icon icon-3"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -128,7 +130,7 @@
       </div>
       <!-- Fim do Header -->
 
-      <div class="row__lg-6 row--gutters">
+      <div class="row__lg-6 services--mb-mobile">
         <!-- Lista de Serviços Prestados Pela Empresa -->
         <div class="services__box">
           <!-- Icon -->
@@ -226,51 +228,54 @@
         </div>
 
         <div class="row row--gutters--small">
-          <div class="row__lg-4">
-            <div class="testimonials__box">
-              <div class="testimonials__photo">
+          <div class="testimonial__list">
+            <div class="row__lg-4 carousel-slide">
+              <div class="testimonials__box">
+                <div class="testimonials__photo">
                   <img src="./assets/img/testimonial.svg" alt="Name da Pessoa" class="testimonial-photo">
-              </div>
-              <div class="testimonials__details">
-                <p class="name">Valério Leonardo</p>
-                <h3 class="testmonials__company">Cicoti, Lda</h3>
-                <p class="text">"Lorem ipsum dolor sit, amet consectetur 
-                  adipisicing elit. ut facilis dolorem mollitia quos. 
-                  Architecto provident nisi earum praesentium dol"
-                </p>
+                </div>
+                <div class="testimonials__details">
+                  <p class="name">Valério Leonardo</p>
+                  <h3 class="testmonials__company">Cicoti, Lda</h3>
+                  <p class="text">"Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. ut facilis dolorem mollitia quos.
+                    Architecto provident nisi earum praesentium dol"
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row__lg-4">
-            <div class="testimonials__box">
-              <div class="testimonials__photo">
+            <div class="row__lg-4 carousel-slide">
+              <div class="testimonials__box">
+                <div class="testimonials__photo">
                   <img src="./assets/img/testimonial.svg" alt="Name da Pessoa" class="testimonial-photo">
+                </div>
+                <div class="testimonials__details">
+                  <p class="name">Valério Leonardo</p>
+                  <h3 class="testmonials__company">Cicoti, Lda</h3>
+                  <p class="text">"Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. ut facilis dolorem mollitia quos.
+                    Architecto provident nisi earum praesentium dol"
+                  </p>
+                </div>
               </div>
-             <div class="testimonials__details">
-              <p class="name">Valério Leonardo</p>
-              <h3 class="testmonials__company">Cicoti, Lda</h3>
-              <p class="text">"Lorem ipsum dolor sit, amet consectetur 
-                adipisicing elit. ut facilis dolorem mollitia quos. 
-                Architecto provident nisi earum praesentium dol"
-              </p>
-             </div>
             </div>
-          </div>
-          <div class="row__lg-4">
-            <div class="testimonials__box">
-              <div class="testimonials__photo">
+            <div class="row__lg-4 carousel-slide">
+              <div class="testimonials__box testimonials__box--last-child">
+                <div class="testimonials__photo">
                   <img src="./assets/img/testimonial.svg" alt="Name da Pessoa">
-              </div>
-              <div class="testimonials__details">
-                <p class="name">Valério Leonardo</p>
-                <h3 class="testmonials__company">Cicoti, Lda</h3>
-                <p class="text">"Lorem ipsum dolor sit, amet consectetur 
-                  adipisicing elit. ut facilis dolorem mollitia quos. 
-                  Architecto provident nisi earum praesentium dol"
-                </p>
+                </div>
+                <div class="testimonials__details">
+                  <p class="name">Valério Leonardo</p>
+                  <h3 class="testmonials__company">Cicoti, Lda</h3>
+                  <p class="text">"Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. ut facilis dolorem mollitia quos.
+                    Architecto provident nisi earum praesentium dol"
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
@@ -335,5 +340,8 @@
       <div class="footer__copyright">
         <small>&copy; 2019 - Design & Desenvolvimento por <a href="">Valeo Serviços</a></small>
       </div>
-    </body>
+
+
+      <script src="./assets/scripts/app.js"></script>
+    </body> 
     </html>

@@ -1,28 +1,74 @@
 @import "app/assets/styles/base/_variables.less";
 @import "app/assets/styles/base/_mixins.less";
+@import "app/assets/styles/base/_global.less";
 
 .header{
-  height: 70px;
-	width: 100%;
-  background-color: @white;
-  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  background: @grey;
+  z-index: 9999999;
+  padding-bottom: 60px;
 
   @media @desktop-up{
-    height: 90px;
+    height: 70px;
   }
-  
+
   &__logotipo{
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
 
-    & p{
-      margin-top: 10px;
-      text-transform: uppercase;
-      font-weight: 500;
-      color: @divider;
-
-       @media @desktop-up{
-        margin-top: 20px;
-      }
+    @media @desktop-up{
+      padding-top: 0px;
+      text-align: left;
     }
   }
 
+  .primary-nav{
+
+    @media @desktop-up{
+      float: right;
+    }
+
+    nav{
+      position: fixed;
+      background: @black;
+      top: 60px;
+      right: 0;
+      width: 80%;
+      height: 100vh;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(100%);
+      transition: all ease 0.3s;
+
+      @media @desktop-up{
+        position: relative;
+        width: 100%;
+        height: 70px;
+        top: 0px;
+        background: transparent;
+        transform: translateX(0%);
+      }
+    }
+
+    .nav-active{
+      transform: translate(0%);
+    }
+    .burger{
+      width: 30px;
+      height: 20px;
+      cursor: pointer;
+      z-index: 9999999;
+
+      @media @desktop-up{
+        display: none;
+      }
+    }
+  }
 }
+

@@ -1,51 +1,91 @@
 @import "app/assets/styles/base/_variables.less";
 @import "app/assets/styles/base/_mixins.less";
+@import "app/assets/styles/base/_global.less";
 
 .primary-nav{
-  display: none;
-  
-  @media @tablet-up{
-    display: block;
-  } 
-  &__main-nav{
-    padding-top: 5px;
-    float: right;
+
+  &__hamburguer-menu{
+    z-index: 99999;
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    cursor: pointer;
+
+    &__icon{
+      z-index: 99999;
+      width: 100%;
+      height: 3px;
+      background-color: @black;
+      margin-bottom: 7px;
+      
+      @media @desktop-up{
+        display: none;
+      }
+    }
+  }
+
+
+
+
+  // ===== Menu ========// 
 
     &__menu{
+    #clearFix();
+    list-style: none;
+    
+    @media @desktop-up{
+      width: 100%;
       margin: 0;
       padding: 0;
-      
-      &__menu-item{
-        float: left;
-        padding-right: 20px;
-        list-style: none;
-        line-height: 90px;
-        
-        a{
-          text-decoration: none;
-          color: @black;
-          font-weight: 500;
-          font-size: 0.8125rem;
+    }
+  
+    &-item{
+      padding-bottom: 30px;
+
+      @keyframes navLinkFade {
+        from{
+          opacity: 0;
+          transform: translateX(50px)
+        }to{
+          opacity: 1;
+          transform: translateX(0px)
         }
       }
-      
-    }
-  }
-  &__btn{
-    margin-top: 20px;
-  }
 
-  &__menu-icon{
-    width: 30px;
-    height: 30px;
-    background-color: @black;
-    position: absolute;
-    top: 45px;
-    transform: translateY(-45%);
-    right: 10px;
+      @media @desktop-up{
+        text-align: start;
+        padding-right: 20px;
+        float: left;
+        line-height: 70px;
+        opacity: 1;
+        padding-bottom: 0px;
+        text-align: right;
+      }
 
-    @media @desktop-up{
-      display: none;
+      a{
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        color: @white;
+        letter-spacing: 1px;
+        cursor: pointer;
+        z-index: 99999999;
+        
+
+        @media @desktop-up{
+          text-align: left;
+          font-size: 0.8125rem;
+          color: @black;
+          font-weight: 400;
+        }
+      }
     }
+    
   }
 }
+
+
+

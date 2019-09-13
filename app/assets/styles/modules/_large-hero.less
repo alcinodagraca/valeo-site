@@ -6,20 +6,20 @@
   background: @divider;
   width: 100%;
   position: relative;
+  margin-top: 60px;
   height: 450px;
 
   @media @desktop-up{
     height: 650px;
   }
   &__description{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
+    padding-top: 50px;
 
     @media @desktop-up{
-      transform: translateY(-50%);
-      width: 50%;
+      display: block;
+      padding: 10px 0;
+      width: 100%;
+      transform: translateY(50%)
     }
     
   }

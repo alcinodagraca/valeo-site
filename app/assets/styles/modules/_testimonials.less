@@ -1,12 +1,12 @@
 @import "app/assets/styles/base/_variables.less";
 @import "app/assets/styles/base/_global.less";
 @import "app/assets/styles/base/_text-content.less";
+@import "app/assets/styles/base/_mixins.less";
 
 .testimonials{
   #clearFix();
   width: 100%;
   height: auto;
-  box-sizing: content-box;
 
   &__header--center{
     text-align: center;
@@ -14,15 +14,27 @@
   &__header-title{
       #sessionTitle();
       #titleDivider--center();
-      margin-bottom: 150px;
+      margin-bottom: 90px;
+
+      @media @desktop-up{
+        margin-bottom: 150px;
+      }
   }
   
   &__photo{
-    width: 160px;
+    width: 120px;
     height: auto;
-    margin: 0 auto -80px auto;
+    margin: 0 auto -60px auto;
     position: relative;
-    top: -80px;
+    top: -60px;
+
+    @media @desktop-up{
+      width: 160px;
+      height: auto;
+      margin: 0 auto -80px auto;
+      position: relative;
+      top: -80px;
+    }
     
     img{
       border-radius: 160px;
@@ -35,7 +47,23 @@
     border: 1px solid @grey;
     border-radius: 20px 20px 20px 0;
     box-shadow: 1px 1px 1px @grey;
-    height: 350px;
+    height: 330px;
+    margin-right: 0px;
+    margin-bottom: 70px;
+
+    &--last-child{
+      margin-bottom: 0;
+      @media @desktop-up{
+        margin-right: 0px;
+      }
+    }
+
+    @media @desktop-up{
+      margin-right: 10px;
+      margin-bottom: 0px;
+      height: 350px;
+    }
+
 
     h3{
       font-weight: 400;
@@ -55,5 +83,6 @@
     text-align: center;
     padding: 0 10px;
   }
+
 }
 

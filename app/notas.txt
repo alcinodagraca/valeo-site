@@ -12,17 +12,6 @@ Em preto em branco, não terá mais nada em especial, na Página sobre Empresa, 
 
 
 
-<div class="callUs__content">
-          <div class="callUs__col left">
-            <p class="callUs__title">Falemos de <b>Negócios</b></p>
-            <p class="callUs__text">Entre em contacto por Chamada Telefónica ou por WhatsApp</p>
-            <p class="callUs__numbers">(+258) 84 51 000 01 / 84 51 000 01</p>
-          </div>
-          <div class="callUs__col right">
-            <p class="callUs__title">Peça o seu <b>orçamento</b> </p>
-            <button class="btn btn-medium">Enviar e-mail</button> 
-          </div>
-        </div>
 
 
 
@@ -34,16 +23,112 @@ Em preto em branco, não terá mais nada em especial, na Página sobre Empresa, 
 
 
 
-      <!-- Menu do topo, contém todas as páginas do site-->
-      <div class="header__top-navegation">
-        <nav class="header__top-navegation__main-nav">
-          <ul class="header__top-navegation__main-nav__menu">
-            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Productos</a></li>
-            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Serviços</a></li>
-            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Clientes</a></li>
-            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">Portifólio</a></li>
-            <li class="header__top-navegation__main-nav__menu__menu-item"><a href="">A Empresa</a></li>
-            <button class="btn btn-medium btn-white">Contacte-nos</button>
-          </ul>
-        </nav>  
-      </div>
+   &__btn{
+    margin-top: 20px;
+  }
+ 
+
+ 
+
+  &__main-nav{
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: @black;
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in; 
+
+  @media @desktop-up{
+    display: block;
+    position: relative;
+    right: 0;
+    background: transparent;
+    width: 100%;
+    height: auto;
+    transform: translate(0);
+  }
+
+  &__menu{
+    list-style: none;
+    
+
+    @media @desktop-up{
+      margin: 0;
+      padding: 0;
+      float: right;
+    }
+   
+
+    &__menu-item{
+      text-align: right;
+      padding: 15px 0;
+      //opacity: 0;
+
+      @media @desktop-up{
+        text-align: start;
+        padding-right: 20px;
+        float: left;
+        line-height: 60px;
+        opacity: 1;
+      }
+
+      a{
+        text-decoration: none;
+        font-weight: 200;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        color: @white;
+        letter-spacing: 1px;
+
+        @media @desktop-up{
+          font-size: 0.8125rem;
+          color: @black;
+          font-weight: 400;
+        }
+      }
+    }
+    
+  }
+
+}
+
+.nav-active{
+  transform: translate(0%);
+}
+
+// .toggle .icon-1{
+//   transform: rotate(-45deg) translate(-8px);
+// }
+// .toggle .icon-2{
+//   opacity: 0;
+// }
+// .toggle .icon-3{
+//   transform: rotate(45deg) translate(-8px);
+// }
+
+
+
+  height: 70px;
+  background-color: @white;
+  width: 100%;
+  overflow: hidden;
+  
+  // &__logotipo{
+  //   width: 100%;
+  //   & p{
+  //     padding-top: 20px;
+  //     text-transform: uppercase;
+  //     font-weight: 500;
+  //     color: @divider;
+
+  //      @media @desktop-up{
+  //       margin-top: 20px;
+  //     }
+  //   }
+  // }

@@ -4,21 +4,36 @@
 
 
 .services{
-  clear: both;
-  display: block;
   width: 100%;
-  // margin: 0;
-  // padding: 0;
-  overflow: hidden;
+  overflow: hidde;
+  #clearFix();
+
+  @media @tablet-up{
+    height: 600px;
+  }
+  
+
+  &--mb-mobile{
+    margin-bottom: 50px;
+
+    @media @desktop-up{
+      margin-bottom: 0;
+    }
+  }
 
   &__box{
+
+    @media @tablet-up{
+      width: 90%; 
+    }
+    
     margin-bottom: 50px;
     &:last-child{
       margin: 0;
     }
 
     @media @tablet-up{
-      margin-bottom: 100px;
+      margin-bottom: 70px;
     }
 
     &--margin-bottom{
