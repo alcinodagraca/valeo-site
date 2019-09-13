@@ -3,14 +3,38 @@
 @import "app/assets/styles/base/_mixins.less";
 
 .contact{
-  background: @grey;
+  background: transparent;
+  padding-top: 200px;
 
   &__header{
     padding-bottom: 30px;
   }
 
   &__info{
+    position: relative;
+    transform: translateY(50%);
+    h3{
+      text-transform: uppercase;
+      font-weight: 400;
+      #titleDivider--small();
+      letter-spacing: 1px;
+    }
+    p{
+      text-transform: capitalize;
+      padding: 3px 0;
+    }
   }
 
+  &__mail{
+    
+    input, textarea{
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      border: 1px solid @black;
+      padding: 15px;
+      border-radius: 30px 5px 30px 30px;
+    }
+  }
 
 }
