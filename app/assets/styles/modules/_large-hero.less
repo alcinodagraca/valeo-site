@@ -7,19 +7,24 @@
   width: 100%;
   position: relative;
   margin-top: 60px;
-  height: 450px;
+  height: 400px;
+
+  &__bg{
+    position: relative;
+  }
 
   @media @desktop-up{
     height: 650px;
   }
   &__description{
-    padding-top: 50px;
+    position: absolute;
+    top: 0;
+    transform: translateY(10%);
 
     @media @desktop-up{
-      display: block;
-      padding: 10px 0;
-      width: 100%;
-      transform: translateY(50%)
+      padding-top: 50px;
+      transform: translateY(50%);
+      width: 50%;
     }
     
   }
@@ -30,9 +35,17 @@
     color: @white;
     font-weight: 400;
     padding: 10px 0;
+    text-align: center;
+    margin: 0 0 -10px 0;
+    #titleDivider--center();
 
     @media @desktop-up{
-      margin-bottom: 0px;
+      margin: 0;
+      font-size: 1.1rem;
+      &::after{
+        margin-left: 0;
+      }
+      text-align: left;
     }
 
   }
@@ -40,17 +53,19 @@
   &__description__company-text{
     display: block;
     padding: 0 0 15px 0;
-    width: 94%;
-    font-size: 1rem;
+    width: 93%;
+    font-size: 1.1rem;
     font-weight: 300;
     color: @white;
     letter-spacing: 2.5px;
     line-height: 1.7;
-    text-align: start;
+    text-align: center;
 
     @media @desktop-up{
       width: 60%;
       font-size: 1.4rem;
+      margin-left: 0;
+      text-align: left;
     }
 
     a{
@@ -62,5 +77,10 @@
         font-size: 1.4rem;
       }
     }
+  }
+
+  &__btn{
+    display: block;
+    margin: 0 auto;
   }
 }

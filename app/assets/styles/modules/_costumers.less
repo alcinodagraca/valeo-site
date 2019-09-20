@@ -1,5 +1,7 @@
 @import "app/assets/styles/base/_variables.less";
 
+
+
 .costumers{
   background: @grey;
   height: 140px;
@@ -7,9 +9,53 @@
   clear: both;
   display: block;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+
+
 
   &--service-page{
     background: @white;
     height: 500px;
   }
+  &__list{
+    line-height: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__item{
+    display: inline;
+    padding: 0 50px;
+    img{
+      width: 70px;
+      filter: grayscale(97%);
+      &:hover{
+        filter: grayscale(0%);
+      }
+    }
+  }
+  // .governo,.forum,.joint,.bim{
+  //   position: relative;
+  // }
+  // .joint{
+  //   position: relative;
+  //   top: 10px;
+  // }
+  // .governo{
+  //   top: 5px;
+  // }
+  // .bim{
+  //   position: relative;
+  //   top: 10px;
+  // }
+  // .bim img{
+  //   width: 150px;
+  // }
 } 
+.owl-carousel .owl-item img{
+  width: 80px;
+}

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./public/styles/styles.min.css">
+  <link rel="stylesheet" href="./assets/lib/owlCarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/lib/owlCarousel/assets/owl.theme.default.min.css">
   <title>Valeo Serviços | Página Inicial</title>
 </head>
 <body>
@@ -13,8 +15,11 @@
       <div class="row">
         <div class="row__lg-2">
           <div class="header__logotipo">
-              <!-- <img src="" alt="Valeo" class="logo"> -->
-              <p>Valeo Serviços</p>
+              <picture>
+                <img src="assets/img/logo-mobile.svg" alt="Valeo Serviços">
+                <source media="(max-width: 450px)" srcset="assets/img/logo-mobile.svg">
+                <source media="(min-width: 1200px)" srcset="assets/img/logo.svg">
+              </picture>
           </div>
         </div>
         <div class="row__lg-10">
@@ -46,10 +51,12 @@
 
   <div class="large-hero">
       <div class="large-hero__bg">
-        <!-- <picture>
-          <source class="large-hero__logo-image" media="(min-width: 1200px)" srcset="assets/img/large-hero-bg.svg">
-          <img class="large-hero__logo-image-sm" src="assets/img/large-hero-small.svg" alt="Man in the printing Machine in our Studio">
-        </picture> -->
+        <picture class="large-hero__bg__images">
+          <source class="large-hero__logo-image" media="(max-width: 450px)" srcset="assets/img/banner/2x/banner-final-mobile-1-mdpi.jpg">
+          <source class="large-hero__logo-image" media="(max-width: 991px)" srcset="assets/img/banner/2x/banner-final-large-2.jpg">
+          <source class="large-hero__logo-image" media="(max-width: 1200px)" srcset="assets/img/banner/2x/banner-final-ws-2.jpg">
+          <img class="large-hero__logo-image-sm" src="assets/img/banner/2x/banner-final-ws-2.jpg" alt="Nossas máquinas de bordar">
+        </picture>
       </div>
       <div class="container">
         <div class="large-hero__description">
@@ -59,7 +66,7 @@
               muito <a>profissionalismo</a>, <a>seriedade </a> e <a>qualidade</a>  que permita oferecer soluções
               integradas, no trato e garantia de serviços ao cliente.
           </p>
-          <button class="btn large-hero__btn btn-white btn-medium">Serviços</button>
+          <button class="btn large-hero__btn btn-medium">Serviços</button>
         </div>
       </div>
   </div>
@@ -68,16 +75,14 @@
   <!-- Clientes, aqui teremos uma lista de principais clientes -->
   <section class="costumers">
     <div class="container">
-      <span class="costumers__item">cliente 1</span>
-      <span class="costumers__item">cliente 2</span>
-      <span class="costumers__item">cliente 3</span>
-      <span class="costumers__item">cliente 4</span>
-      <span class="costumers__item">cliente 5</span>
-      <span class="costumers__item">cliente 6</span>
-      <span class="costumers__item">cliente 7</span>
-      <span class="costumers__item">cliente 8</span>
-      <span class="costumers__item">cliente 9</span>
-      <span class="costumers__item">cliente 10</span>
+      <ul class="costumers__list">
+        <li class="costumers__item higest"><img src="./assets/img/Untitled-3-01.svg" alt="certificados" title="Apcer"></li>
+        <li class="costumers__item governo"><img src="./assets/img/Untitled-3-02.svg" alt="certificados" title="Apcer"></li>
+        <li class="costumers__item joint"><img src="./assets/img/Untitled-3-03.svg" alt="certificados" title="Apcer"></li>
+        <li class="costumers__item bim"><img src="./assets/img/Untitled-3-04.svg" alt="certificados" title="Apcer"></li>
+        <li class="costumers__item cimentos"><img src="./assets/img/Untitled-3-05.svg" alt="certificados" title="Apcer"></li>
+        <li class="costumers__item forum"><img src="./assets/img/Untitled-3-07.svg" alt="certificados" title="Apcer"></li>
+      </ul>
     </div>
   </section>
 
@@ -341,7 +346,9 @@
         <small>&copy; 2019 - Design & Desenvolvimento por <a href="">Valeo Serviços</a></small>
       </div>
 
-
+      <script src="./assets/lib/owlCarousel/owl.carousel.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="./assets/scripts/app.js"></script>
     </body> 
     </html>
